@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/andy.iml" filepath="$PROJECT_DIR$/andy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pay-alipay/pay-alipay.iml" filepath="$PROJECT_DIR$/pay-alipay/pay-alipay.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pay-common/pay-common.iml" filepath="$PROJECT_DIR$/pay-common/pay-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pay-dal/pay-dal.iml" filepath="$PROJECT_DIR$/pay-dal/pay-dal.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pay-interface/pay-interface.iml" filepath="$PROJECT_DIR$/pay-interface/pay-interface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pay-model/pay-model.iml" filepath="$PROJECT_DIR$/pay-model/pay-model.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pay-serviceimpl/pay-serviceimpl.iml" filepath="$PROJECT_DIR$/pay-serviceimpl/pay-serviceimpl.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pay-sso/pay-sso.iml" filepath="$PROJECT_DIR$/pay-sso/pay-sso.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pay-web/pay-web.iml" filepath="$PROJECT_DIR$/pay-web/pay-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pay-wechat/pay-wechat.iml" filepath="$PROJECT_DIR$/pay-wechat/pay-wechat.iml" />
+    </modules>
+  </component>
+</project>

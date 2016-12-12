@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="pay-interface:war">
+    <output-path>$PROJECT_DIR$/pay-interface/target</output-path>
+    <root id="archive" name="interface.war">
+      <element id="artifact" artifact-name="pay-interface:war exploded" />
+    </root>
+  </artifact>
+</component>

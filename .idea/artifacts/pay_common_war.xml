@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="pay-common:war">
+    <output-path>$PROJECT_DIR$/pay-common/target</output-path>
+    <root id="archive" name="pay-common.war">
+      <element id="artifact" artifact-name="pay-common:war exploded" />
+    </root>
+  </artifact>
+</component>
