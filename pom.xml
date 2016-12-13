@@ -5,17 +5,21 @@
   <artifactId>andy</artifactId>
   <packaging>pom</packaging>
   <version>1.0-SNAPSHOT</version>
-    <modules>
-      <module>pay-web</module>
-      <module>pay-common</module>
-      <module>pay-serviceimpl</module>
-      <module>pay-sso</module>
-      <module>pay-model</module>
-        <module>../pay-alipay</module>
-      <module>pay-alipay</module>
-      <module>pay-wechat</module>
-    </modules>
-    <name>andy Maven Webapp</name>
+  <!--properties version start-->
+  <properties>
+    <spring-version>4.2.6.RELEASE</spring-version>
+  </properties>
+  <!--properties version end-->
+  <modules>
+    <module>pay-web</module>
+    <module>pay-common</module>
+    <module>pay-serviceimpl</module>
+    <module>pay-sso</module>
+    <module>pay-model</module>
+    <module>pay-alipay</module>
+    <module>pay-wechat</module>
+  </modules>
+  <name>andy Maven Webapp</name>
   <url>http://maven.apache.org</url>
   <dependencies>
     <dependency>
@@ -34,52 +38,52 @@
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-context</artifactId>
-      <version>4.2.5.RELEASE</version>
+      <version>${spring-version}</version>
     </dependency>
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-webmvc</artifactId>
-      <version>4.2.6.RELEASE</version>
+      <version>${spring-version}</version>
     </dependency>
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-web</artifactId>
-      <version>4.2.6.RELEASE</version>
+      <version>${spring-version}</version>
     </dependency>
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-jdbc</artifactId>
-      <version>4.2.6.RELEASE</version>
+      <version>${spring-version}</version>
     </dependency>
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-core</artifactId>
-      <version>4.2.6.RELEASE</version>
+      <version>${spring-version}</version>
     </dependency>
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-aop</artifactId>
-      <version>4.2.6.RELEASE</version>
+      <version>${spring-version}</version>
     </dependency>
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-beans</artifactId>
-      <version>4.2.6.RELEASE</version>
+      <version>${spring-version}</version>
     </dependency>
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-expression</artifactId>
-      <version>4.2.6.RELEASE</version>
+      <version>${spring-version}</version>
     </dependency>
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-context-support</artifactId>
-      <version>4.2.6.RELEASE</version>
+      <version>${spring-version}</version>
     </dependency>
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-test</artifactId>
-      <version>4.2.6.RELEASE</version>
+      <version>${spring-version}</version>
     </dependency>
     <dependency>
       <groupId>org.apache.shiro</groupId>
