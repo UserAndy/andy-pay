@@ -19,13 +19,10 @@
     </bean>
 
     <bean id="sessionManager" class="org.apache.shiro.web.session.mgt.DefaultWebSessionManager">
-        <property name="globalSessionTimeout" value="60000" />  <!-- 30分钟 1800000-->
+        <property name="globalSessionTimeout" value="1800000" />
         <property name="sessionDAO" ref="shiroSessionDao" />
         <property name="sessionIdCookie" ref="sharesession" />
         <property name="sessionValidationSchedulerEnabled" value="true" />
-        <!--监听session-->
-        <property name="sessionListeners" ref="sessionListener"/>
-
     </bean>
 
     <bean id="sharesession" class="org.apache.shiro.web.servlet.SimpleCookie">

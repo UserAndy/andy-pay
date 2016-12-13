@@ -33,17 +33,17 @@
         <module name="pay-wechat" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="andy" target="1.5" />
-      <module name="pay-alipay" target="1.5" />
-      <module name="pay-common" target="1.5" />
-      <module name="pay-dal" target="1.5" />
-      <module name="pay-interface" target="1.5" />
-      <module name="pay-model" target="1.5" />
-      <module name="pay-serviceimpl" target="1.5" />
-      <module name="pay-sso" target="1.5" />
-      <module name="pay-web" target="1.7" />
-      <module name="pay-wechat" target="1.5" />
+    <bytecodeTargetLevel target="1.8">
+      <module name="andy" target="1.8" />
+      <module name="pay-alipay" target="1.8" />
+      <module name="pay-common" target="1.8" />
+      <module name="pay-dal" target="1.8" />
+      <module name="pay-interface" target="1.8" />
+      <module name="pay-model" target="1.8" />
+      <module name="pay-serviceimpl" target="1.8" />
+      <module name="pay-sso" target="1.8" />
+      <module name="pay-web" target="1.8" />
+      <module name="pay-wechat" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

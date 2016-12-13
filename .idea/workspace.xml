@@ -2,24 +2,93 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="022db87b-b2fe-42a7-bd12-6acf492ffb3d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_4_2_6_RELEASE.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/pay_common_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/pay_common_war_exploded.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/pay_dal_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/pay_dal_war_exploded.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/pay_interface_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/pay_interface_war_exploded.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/pay_serviceimpl_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/pay_serviceimpl_war_exploded.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/pay_sso_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/pay_sso_war_exploded.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/pay_web_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/pay_web_war_exploded.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pay-sso/target/test-classes/TestSeriazeUtils.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pay-common/target/classes/org/andy/pay/common/bean/ResultCode.class" afterPath="$PROJECT_DIR$/pay-common/target/classes/org/andy/pay/common/bean/ResultCode.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pay-common/target/classes/org/andy/pay/common/utils/ConvertXMLUtils.class" afterPath="$PROJECT_DIR$/pay-common/target/classes/org/andy/pay/common/utils/ConvertXMLUtils.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pay-common/target/classes/org/andy/pay/common/utils/EncryptUtils.class" afterPath="$PROJECT_DIR$/pay-common/target/classes/org/andy/pay/common/utils/EncryptUtils.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pay-common/target/classes/org/andy/pay/common/utils/HttpUtils.class" afterPath="$PROJECT_DIR$/pay-common/target/classes/org/andy/pay/common/utils/HttpUtils.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pay-common/target/classes/org/andy/pay/common/utils/JsonUtils.class" afterPath="$PROJECT_DIR$/pay-common/target/classes/org/andy/pay/common/utils/JsonUtils.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pay-common/target/classes/org/andy/pay/common/utils/PropertiesUtils.class" afterPath="$PROJECT_DIR$/pay-common/target/classes/org/andy/pay/common/utils/PropertiesUtils.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pay-common/target/classes/org/andy/pay/common/utils/SHA1.class" afterPath="$PROJECT_DIR$/pay-common/target/classes/org/andy/pay/common/utils/SHA1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pay-common/target/classes/org/andy/pay/common/utils/StringUtils.class" afterPath="$PROJECT_DIR$/pay-common/target/classes/org/andy/pay/common/utils/StringUtils.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pay-common/target/classes/org/andy/pay/common/utils/SystemUtils.class" afterPath="$PROJECT_DIR$/pay-common/target/classes/org/andy/pay/common/utils/SystemUtils.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pay-common/target/classes/org/andy/pay/common/utils/UserAgentUtils.class" afterPath="$PROJECT_DIR$/pay-common/target/classes/org/andy/pay/common/utils/UserAgentUtils.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pay-common/target/classes/org/andy/pay/common/utils/UuidUtils.class" afterPath="$PROJECT_DIR$/pay-common/target/classes/org/andy/pay/common/utils/UuidUtils.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pay-common/target/classes/org/andy/pay/common/utils/ValidateUtils.class" afterPath="$PROJECT_DIR$/pay-common/target/classes/org/andy/pay/common/utils/ValidateUtils.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pay-common/target/classes/org/andy/pay/common/utils/XStreamFactory$1$1.class" afterPath="$PROJECT_DIR$/pay-common/target/classes/org/andy/pay/common/utils/XStreamFactory$1$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pay-common/target/classes/org/andy/pay/common/utils/XStreamFactory$1.class" afterPath="$PROJECT_DIR$/pay-common/target/classes/org/andy/pay/common/utils/XStreamFactory$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pay-common/target/classes/org/andy/pay/common/utils/XStreamFactory.class" afterPath="$PROJECT_DIR$/pay-common/target/classes/org/andy/pay/common/utils/XStreamFactory.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pay-common/target/classes/org/andy/pay/common/we.class" afterPath="$PROJECT_DIR$/pay-common/target/classes/org/andy/pay/common/we.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pay-common/target/test-classes/TestUuid.class" afterPath="$PROJECT_DIR$/pay-common/target/test-classes/TestUuid.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pay-common/target/test-classes/common/TestEncryptUtils.class" afterPath="$PROJECT_DIR$/pay-common/target/test-classes/common/TestEncryptUtils.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pay-common/target/test-classes/common/TestGetProties.class" afterPath="$PROJECT_DIR$/pay-common/target/test-classes/common/TestGetProties.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pay-common/target/test-classes/common/TestMax.class" afterPath="$PROJECT_DIR$/pay-common/target/test-classes/common/TestMax.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pay-common/target/test-classes/common/TestName.class" afterPath="$PROJECT_DIR$/pay-common/target/test-classes/common/TestName.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pay-common/target/test-classes/reference/TestRefernce.class" afterPath="$PROJECT_DIR$/pay-common/target/test-classes/reference/TestRefernce.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pay-dal/target/classes/org/andy/pay/mapper/LogMapper.class" afterPath="$PROJECT_DIR$/pay-dal/target/classes/org/andy/pay/mapper/LogMapper.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pay-dal/target/classes/org/andy/pay/mapper/UserMapper.class" afterPath="$PROJECT_DIR$/pay-dal/target/classes/org/andy/pay/mapper/UserMapper.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pay-dal/target/classes/org/andy/pay/test.class" afterPath="$PROJECT_DIR$/pay-dal/target/classes/org/andy/pay/test.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pay-dal/target/test-classes/enums/TestLogStatus.class" afterPath="$PROJECT_DIR$/pay-dal/target/test-classes/enums/TestLogStatus.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pay-interface/target/classes/org/andy/pay/service/LogService.class" afterPath="$PROJECT_DIR$/pay-interface/target/classes/org/andy/pay/service/LogService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pay-interface/target/classes/org/andy/pay/service/UserInfoService.class" afterPath="$PROJECT_DIR$/pay-interface/target/classes/org/andy/pay/service/UserInfoService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pay-model/target/classes/org/andy/pay/enums/LockedStatus.class" afterPath="$PROJECT_DIR$/pay-model/target/classes/org/andy/pay/enums/LockedStatus.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pay-model/target/classes/org/andy/pay/enums/LoginType.class" afterPath="$PROJECT_DIR$/pay-model/target/classes/org/andy/pay/enums/LoginType.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pay-model/target/classes/org/andy/pay/model/LoginLog.class" afterPath="$PROJECT_DIR$/pay-model/target/classes/org/andy/pay/model/LoginLog.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pay-model/target/classes/org/andy/pay/model/UserInfo.class" afterPath="$PROJECT_DIR$/pay-model/target/classes/org/andy/pay/model/UserInfo.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pay-model/target/classes/org/andy/pay/test.class" afterPath="$PROJECT_DIR$/pay-model/target/classes/org/andy/pay/test.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pay-serviceimpl/target/classes/org/andy/pay/service/impl/LogServiceImpl.class" afterPath="$PROJECT_DIR$/pay-serviceimpl/target/classes/org/andy/pay/service/impl/LogServiceImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pay-serviceimpl/target/classes/org/andy/pay/service/impl/UserInfoServiceImpl.class" afterPath="$PROJECT_DIR$/pay-serviceimpl/target/classes/org/andy/pay/service/impl/UserInfoServiceImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pay-sso/target/classes/org/andy/pay/sso/cached/ICached.class" afterPath="$PROJECT_DIR$/pay-sso/target/classes/org/andy/pay/sso/cached/ICached.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pay-sso/target/classes/org/andy/pay/sso/cached/RedisCachedImpl$1.class" afterPath="$PROJECT_DIR$/pay-sso/target/classes/org/andy/pay/sso/cached/RedisCachedImpl$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pay-sso/target/classes/org/andy/pay/sso/cached/RedisCachedImpl$10.class" afterPath="$PROJECT_DIR$/pay-sso/target/classes/org/andy/pay/sso/cached/RedisCachedImpl$10.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pay-sso/target/classes/org/andy/pay/sso/cached/RedisCachedImpl$11.class" afterPath="$PROJECT_DIR$/pay-sso/target/classes/org/andy/pay/sso/cached/RedisCachedImpl$11.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pay-sso/target/classes/org/andy/pay/sso/cached/RedisCachedImpl$12.class" afterPath="$PROJECT_DIR$/pay-sso/target/classes/org/andy/pay/sso/cached/RedisCachedImpl$12.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pay-sso/target/classes/org/andy/pay/sso/cached/RedisCachedImpl$2.class" afterPath="$PROJECT_DIR$/pay-sso/target/classes/org/andy/pay/sso/cached/RedisCachedImpl$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pay-sso/target/classes/org/andy/pay/sso/cached/RedisCachedImpl$3.class" afterPath="$PROJECT_DIR$/pay-sso/target/classes/org/andy/pay/sso/cached/RedisCachedImpl$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pay-sso/target/classes/org/andy/pay/sso/cached/RedisCachedImpl$4.class" afterPath="$PROJECT_DIR$/pay-sso/target/classes/org/andy/pay/sso/cached/RedisCachedImpl$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pay-sso/target/classes/org/andy/pay/sso/cached/RedisCachedImpl$5.class" afterPath="$PROJECT_DIR$/pay-sso/target/classes/org/andy/pay/sso/cached/RedisCachedImpl$5.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pay-sso/target/classes/org/andy/pay/sso/cached/RedisCachedImpl$6.class" afterPath="$PROJECT_DIR$/pay-sso/target/classes/org/andy/pay/sso/cached/RedisCachedImpl$6.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pay-sso/target/classes/org/andy/pay/sso/cached/RedisCachedImpl$7.class" afterPath="$PROJECT_DIR$/pay-sso/target/classes/org/andy/pay/sso/cached/RedisCachedImpl$7.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pay-sso/target/classes/org/andy/pay/sso/cached/RedisCachedImpl$8.class" afterPath="$PROJECT_DIR$/pay-sso/target/classes/org/andy/pay/sso/cached/RedisCachedImpl$8.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pay-sso/target/classes/org/andy/pay/sso/cached/RedisCachedImpl$9.class" afterPath="$PROJECT_DIR$/pay-sso/target/classes/org/andy/pay/sso/cached/RedisCachedImpl$9.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pay-sso/target/classes/org/andy/pay/sso/cached/RedisCachedImpl.class" afterPath="$PROJECT_DIR$/pay-sso/target/classes/org/andy/pay/sso/cached/RedisCachedImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pay-sso/target/classes/org/andy/pay/sso/common/BaseLogger.class" afterPath="$PROJECT_DIR$/pay-sso/target/classes/org/andy/pay/sso/common/BaseLogger.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pay-sso/target/classes/org/andy/pay/sso/common/SessionUser.class" afterPath="$PROJECT_DIR$/pay-sso/target/classes/org/andy/pay/sso/common/SessionUser.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pay-sso/target/classes/org/andy/pay/sso/listener/SessionListener.class" afterPath="$PROJECT_DIR$/pay-sso/target/classes/org/andy/pay/sso/listener/SessionListener.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pay-sso/target/classes/org/andy/pay/sso/shiro/MyRealm.class" afterPath="$PROJECT_DIR$/pay-sso/target/classes/org/andy/pay/sso/shiro/MyRealm.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pay-sso/target/classes/org/andy/pay/sso/shiro/ShiroRedisCache.class" afterPath="$PROJECT_DIR$/pay-sso/target/classes/org/andy/pay/sso/shiro/ShiroRedisCache.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pay-sso/target/classes/org/andy/pay/sso/shiro/ShiroRedisCacheManager.class" afterPath="$PROJECT_DIR$/pay-sso/target/classes/org/andy/pay/sso/shiro/ShiroRedisCacheManager.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pay-sso/target/classes/org/andy/pay/sso/shiro/ShiroUser.class" afterPath="$PROJECT_DIR$/pay-sso/target/classes/org/andy/pay/sso/shiro/ShiroUser.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pay-sso/target/classes/org/andy/pay/sso/utils/SerializeUtil.class" afterPath="$PROJECT_DIR$/pay-sso/target/classes/org/andy/pay/sso/utils/SerializeUtil.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pay-sso/target/classes/org/andy/pay/sso/utils/SpringUtils.class" afterPath="$PROJECT_DIR$/pay-sso/target/classes/org/andy/pay/sso/utils/SpringUtils.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pay-web/target/classes/org/andy/pay/TestExceptionController.class" afterPath="$PROJECT_DIR$/pay-web/target/classes/org/andy/pay/TestExceptionController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pay-web/target/classes/org/andy/pay/TestUser.class" afterPath="$PROJECT_DIR$/pay-web/target/classes/org/andy/pay/TestUser.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pay-web/target/classes/org/andy/pay/User.class" afterPath="$PROJECT_DIR$/pay-web/target/classes/org/andy/pay/User.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pay-web/target/classes/org/andy/pay/controller/UserController.class" afterPath="$PROJECT_DIR$/pay-web/target/classes/org/andy/pay/controller/UserController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pay-web/target/classes/org/andy/pay/exceptions/OrderNotFoundException.class" afterPath="$PROJECT_DIR$/pay-web/target/classes/org/andy/pay/exceptions/OrderNotFoundException.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pay-web/target/classes/org/andy/pay/job/DemoJob.class" afterPath="$PROJECT_DIR$/pay-web/target/classes/org/andy/pay/job/DemoJob.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pay-web/target/test-classes/controller/AbstractTestCase.class" afterPath="$PROJECT_DIR$/pay-web/target/test-classes/controller/AbstractTestCase.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pay-web/target/test-classes/controller/UserControllerTestCase.class" afterPath="$PROJECT_DIR$/pay-web/target/test-classes/controller/UserControllerTestCase.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pay-web/target/test-classes/jredis/TestJredis.class" afterPath="$PROJECT_DIR$/pay-web/target/test-classes/jredis/TestJredis.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pay-web/target/test-classes/log/TestLog4J.class" afterPath="$PROJECT_DIR$/pay-web/target/test-classes/log/TestLog4J.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pay-web/target/test-classes/log/TestTemplte.class" afterPath="$PROJECT_DIR$/pay-web/target/test-classes/log/TestTemplte.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pay-web/target/test-classes/log/TestUser.class" afterPath="$PROJECT_DIR$/pay-web/target/test-classes/log/TestUser.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pay-web/target/test-classes/mappers/TestUserInfoMapper.class" afterPath="$PROJECT_DIR$/pay-web/target/test-classes/mappers/TestUserInfoMapper.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pay-web/target/test-classes/org/andy/pay/service/impl/TestUserServiceTest.class" afterPath="$PROJECT_DIR$/pay-web/target/test-classes/org/andy/pay/service/impl/TestUserServiceTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pay-web/target/test-classes/test/TestQuartz.class" afterPath="$PROJECT_DIR$/pay-web/target/test-classes/test/TestQuartz.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pay-alipay/pay-alipay.iml" afterPath="$PROJECT_DIR$/pay-alipay/pay-alipay.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pay-common/pay-common.iml" afterPath="$PROJECT_DIR$/pay-common/pay-common.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pay-common/src/main/java/org.andy.pay.common/bean/ResultCode.java" afterPath="$PROJECT_DIR$/pay-common/src/main/java/org.andy.pay.common/bean/ResultCode.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pay-common/src/main/java/org.andy.pay.common/utils/UserAgentUtils.java" afterPath="$PROJECT_DIR$/pay-common/src/main/java/org.andy.pay.common/utils/UserAgentUtils.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pay-dal/pay-dal.iml" afterPath="$PROJECT_DIR$/pay-dal/pay-dal.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pay-interface/pay-interface.iml" afterPath="$PROJECT_DIR$/pay-interface/pay-interface.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pay-interface/src/main/java/org/andy/pay/service/UserInfoService.java" afterPath="$PROJECT_DIR$/pay-interface/src/main/java/org/andy/pay/service/UserInfoService.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pay-model/pay-model.iml" afterPath="$PROJECT_DIR$/pay-model/pay-model.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pay-serviceimpl/pay-serviceimpl.iml" afterPath="$PROJECT_DIR$/pay-serviceimpl/pay-serviceimpl.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pay-sso/pay-sso.iml" afterPath="$PROJECT_DIR$/pay-sso/pay-sso.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pay-web/pay-web.iml" afterPath="$PROJECT_DIR$/pay-web/pay-web.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pay-wechat/pay-wechat.iml" afterPath="$PROJECT_DIR$/pay-wechat/pay-wechat.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pay-sso/target/classes/shiro/sso-shiro.xml" afterPath="$PROJECT_DIR$/pay-sso/target/classes/shiro/sso-shiro.xml" />
     </list>
     <ignored path="andy.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -56,11 +125,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+      <file leaf-file-name="MyRealm.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pay-sso/src/main/java/org/andy/pay/sso/shiro/MyRealm.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="277">
-              <caret line="194" column="18" selection-start-line="194" selection-start-column="18" selection-end-line="194" selection-end-column="18" />
+            <state relative-caret-position="125">
+              <caret line="54" column="52" selection-start-line="54" selection-start-column="52" selection-end-line="54" selection-end-column="52" />
               <folding />
             </state>
           </provider>
@@ -96,12 +165,10 @@
         <option value="$PROJECT_DIR$/pay-serviceimpl/src/main/java/org/andy/pay/service/impl/LogServiceImpl.java" />
         <option value="$PROJECT_DIR$/pay-dal/src/main/java/org/andy/pay/mapper/LogMapper.java" />
         <option value="$PROJECT_DIR$/pay-common/src/main/java/org.andy.pay.common/utils/ValidateUtils.java" />
-        <option value="$PROJECT_DIR$/pay-common/src/main/java/org.andy.pay.common/utils/UserAgentUtils.java" />
         <option value="$PROJECT_DIR$/pay-common/src/main/java/org.andy.pay.common/utils/PropertiesUtils.java" />
         <option value="$PROJECT_DIR$/pay-interface/src/main/java/org/andy/pay/service/LogService.java" />
         <option value="$PROJECT_DIR$/pay-common/src/main/java/org.andy.pay.common/bean/ResultInfo.java" />
         <option value="$PROJECT_DIR$/pay-dal/src/main/java/org/andy/pay/mapper/UserMapper.java" />
-        <option value="$PROJECT_DIR$/pay-common/src/main/java/org.andy.pay.common/bean/ResultCode.java" />
         <option value="$PROJECT_DIR$/pay-common/src/test/java/common/TestMax.java" />
         <option value="$PROJECT_DIR$/pay-common/src/main/java/org.andy.pay.common/utils/StringUtils.java" />
         <option value="$PROJECT_DIR$/pay-web/src/main/resources/spring/spring-web-servlet.xml" />
@@ -137,13 +204,15 @@
         <option value="$PROJECT_DIR$/pay-dal/src/test/java/enums/TestLogStatus.java" />
         <option value="$PROJECT_DIR$/pay-web/src/main/webapp/WEB-INF/views/errorPage/404.jsp" />
         <option value="$PROJECT_DIR$/pay-web/src/main/webapp/resources/custom/js/user/register.js" />
-        <option value="$PROJECT_DIR$/pay-interface/src/main/java/org/andy/pay/service/UserInfoService.java" />
         <option value="$PROJECT_DIR$/pay-serviceimpl/src/main/java/org/andy/pay/service/impl/UserInfoServiceImpl.java" />
         <option value="$PROJECT_DIR$/pay-web/src/main/resources/spring/spring-web-viewController.xml" />
         <option value="$PROJECT_DIR$/pay-web/src/main/java/org/andy/pay/controller/UserController.java" />
         <option value="$PROJECT_DIR$/pay-web/src/main/webapp/WEB-INF/views/user/login.jsp" />
         <option value="$PROJECT_DIR$/pay-web/src/main/webapp/WEB-INF/views/user/register.jsp" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/pay-common/src/main/java/org.andy.pay.common/bean/ResultCode.java" />
+        <option value="$PROJECT_DIR$/pay-common/src/main/java/org.andy.pay.common/utils/UserAgentUtils.java" />
+        <option value="$PROJECT_DIR$/pay-interface/src/main/java/org/andy/pay/service/UserInfoService.java" />
       </list>
     </option>
   </component>
@@ -235,7 +304,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../openSource/shiro" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -976,7 +1045,7 @@
       <workItem from="1481560684214" duration="2183000" />
       <workItem from="1481566822851" duration="203000" />
       <workItem from="1481591714156" duration="59000" />
-      <workItem from="1481645114543" duration="319000" />
+      <workItem from="1481645114543" duration="1124000" />
     </task>
     <task id="LOCAL-00001" summary="添加md5　加密密匙">
       <created>1480438296573</created>
@@ -1041,7 +1110,14 @@
       <option name="project" value="LOCAL" />
       <updated>1481566937150</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="修改父pom.xml">
+      <created>1481645467609</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1481645467609</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1077,7 +1153,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="71989000" />
+    <option name="totallyTimeSpent" value="72794000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="59" y="24" width="1307" height="744" extended-state="6" />
@@ -1095,8 +1171,9 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3655914" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6298003" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21505377" sideWeight="0.49722883" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32872504" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -1113,7 +1190,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24940617" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
       <window_info id="Module Dependencies" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32858273" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21505377" sideWeight="0.49722883" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293745" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1173,7 +1249,8 @@
     <MESSAGE value="修改shiro模块的数据" />
     <MESSAGE value="实现登陆与注册功能" />
     <MESSAGE value="测试支付" />
-    <option name="LAST_COMMIT_MESSAGE" value="测试支付" />
+    <MESSAGE value="修改父pom.xml" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改父pom.xml" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1230,21 +1307,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-core/1.2.6/shiro-core-1.2.6-sources.jar!/org/apache/shiro/session/mgt/AbstractNativeSessionManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="42" column="49" selection-start-line="42" selection-start-column="40" selection-end-line="42" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-web/1.3.2/shiro-web-1.3.2.jar!/org/apache/shiro/web/session/mgt/DefaultWebSessionManager.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="28" column="59" selection-start-line="28" selection-start-column="59" selection-end-line="28" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pay-web/src/main/java/org/andy/pay/listener/SessionListener.java" />
     <entry file="file://$PROJECT_DIR$/pay-sso/src/main/java/org/andy/pay/sso/cached/ICached.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="361">
@@ -1480,27 +1542,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pay-interface/src/main/java/org/andy/pay/service/UserInfoService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
-          <caret line="36" column="75" selection-start-line="36" selection-start-column="75" selection-end-line="36" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.2.6.RELEASE/spring-web-4.2.6.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="140" column="37" selection-start-line="140" selection-start-column="37" selection-end-line="140" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pay-sso/src/main/java/org/andy/pay/sso/shiro/MyRealm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="66" column="0" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1523,13 +1568,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="41" column="27" selection-start-line="41" selection-start-column="27" selection-end-line="41" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pay-common/src/main/java/org.andy.pay.common/bean/ResultCode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="27" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="27" />
         </state>
       </provider>
     </entry>
@@ -1585,8 +1623,58 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="194" column="18" selection-start-line="194" selection-start-column="18" selection-end-line="194" selection-end-column="18" />
+        <state relative-caret-position="201">
+          <caret line="40" column="37" selection-start-line="40" selection-start-column="37" selection-end-line="40" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pay-common/src/main/java/org.andy.pay.common/bean/ResultCode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pay-common/src/main/java/org.andy.pay.common/utils/UserAgentUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pay-common/src/main/java/org.andy.pay.common/utils/PropertiesUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="15" column="36" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pay-common/src/main/java/org.andy.pay.common/utils/HttpUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="82">
+          <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pay-interface/src/main/java/org/andy/pay/service/UserInfoService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pay-sso/src/main/java/org/andy/pay/sso/shiro/MyRealm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="54" column="52" selection-start-line="54" selection-start-column="52" selection-end-line="54" selection-end-column="52" />
           <folding />
         </state>
       </provider>
@@ -1645,12 +1733,11 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>pay-wechat</last-edited>
+          <last-edited>pay-interface</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

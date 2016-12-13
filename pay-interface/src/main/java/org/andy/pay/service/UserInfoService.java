@@ -1,10 +1,8 @@
 package org.andy.pay.service;
 
 import org.andy.pay.common.bean.ResultCode;
-import org.andy.pay.model.LoginLog;
 import org.andy.pay.model.UserInfo;
 
-import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 
 /**

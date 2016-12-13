@@ -5,6 +5,7 @@ package org.andy.pay.common.utils;
  *
  */
 public class UserAgentUtils {
+
     /**
      * 判断是否是移动端访问
      * @param userAgent

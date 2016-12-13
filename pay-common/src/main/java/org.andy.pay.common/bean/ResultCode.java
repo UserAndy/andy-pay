@@ -13,7 +13,7 @@ public class ResultCode {
 
     private boolean success;       //true表示成功　　false　表示失败
 
-    private Object data;     //
+    private Object data;        //
 
     public ResultCode() {
     }
