@@ -5,6 +5,7 @@ import org.andy.pay.model.UserRole;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 
+import java.util.List;
 import java.util.Set;
 
 /**
@@ -43,13 +44,6 @@ public interface UserMapper {
     User getUesrInfo(String username);
 
     /**
-     * 修改用户密码
-     * @param info
-     * @return
-     */
-    boolean modifyPassword(User info);
-
-    /**
      * 修改密码
      * @param userId
      * @param newPassword
@@ -72,15 +66,15 @@ public interface UserMapper {
     /**
      * 根据用户名查找用户的角色
      * @param userId
-     * @return
+     * @return 返回的为角色名
      */
      Set<String> findRoleByUserId(String userId);
 
 
     /**
      * 根据用户名查找用户的权限
-     * @param userId
-     * @return
+     * @param userId 　
+     * @return 返回的为权限名
      */
     Set<String> findPermissionByUserId(String userId);
 

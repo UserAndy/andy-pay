@@ -2,44 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="022db87b-b2fe-42a7-bd12-6acf492ffb3d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pay-common/src/main/java/org.andy.pay.common/utils/PasswordHelper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pay-common/src/test/java/shiro/TestShrio.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pay-dal/src/main/java/org/andy/pay/mapper/PermissionMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pay-dal/src/main/java/org/andy/pay/mapper/RoleMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pay-model/src/main/java/org/andy/pay/model/Permission.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pay-model/src/main/java/org/andy/pay/model/Role.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pay-model/src/main/java/org/andy/pay/model/RolePermission.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pay-model/src/main/java/org/andy/pay/model/UserRole.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pay-model/src/main/java/org/andy/pay/model/package-info.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pay-sso/src/test/shiro/TestShiro.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pay-web/target/pay-web/WEB-INF/lib/spring-context-4.2.5.RELEASE.jar" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/pay-dal/src/main/java/org/andy/pay/mapper/LogMapper.java" afterPath="$PROJECT_DIR$/pay-dal/src/main/java/org/andy/pay/mapper/LoginLogMapper.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/pay-dal/src/main/resources/mybatis/mappers/LogMapper.xml" afterPath="$PROJECT_DIR$/pay-dal/src/main/resources/mybatis/mappers/LoginLogMapper.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/pay-model/src/main/java/org/andy/pay/model/UserInfo.java" afterPath="$PROJECT_DIR$/pay-model/src/main/java/org/andy/pay/model/User.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pay-web/target/pay-web/WEB-INF/classes/org/andy/pay/TestExceptionController.class" afterPath="$PROJECT_DIR$/pay-web/target/pay-web/WEB-INF/classes/org/andy/pay/TestExceptionController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pay-web/target/pay-web/WEB-INF/classes/org/andy/pay/TestUser.class" afterPath="$PROJECT_DIR$/pay-web/target/pay-web/WEB-INF/classes/org/andy/pay/TestUser.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pay-web/target/pay-web/WEB-INF/classes/org/andy/pay/User.class" afterPath="$PROJECT_DIR$/pay-web/target/pay-web/WEB-INF/classes/org/andy/pay/User.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pay-web/target/pay-web/WEB-INF/classes/org/andy/pay/controller/UserController.class" afterPath="$PROJECT_DIR$/pay-web/target/pay-web/WEB-INF/classes/org/andy/pay/controller/UserController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pay-web/target/pay-web/WEB-INF/classes/org/andy/pay/exceptions/OrderNotFoundException.class" afterPath="$PROJECT_DIR$/pay-web/target/pay-web/WEB-INF/classes/org/andy/pay/exceptions/OrderNotFoundException.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pay-web/target/pay-web/WEB-INF/classes/org/andy/pay/job/DemoJob.class" afterPath="$PROJECT_DIR$/pay-web/target/pay-web/WEB-INF/classes/org/andy/pay/job/DemoJob.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pay-web/target/pay-web/WEB-INF/lib/pay-common-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/pay-web/target/pay-web/WEB-INF/lib/pay-common-1.0-SNAPSHOT.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pay-web/target/pay-web/WEB-INF/lib/pay-dal-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/pay-web/target/pay-web/WEB-INF/lib/pay-dal-1.0-SNAPSHOT.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pay-web/target/pay-web/WEB-INF/lib/pay-interface-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/pay-web/target/pay-web/WEB-INF/lib/pay-interface-1.0-SNAPSHOT.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pay-web/target/pay-web/WEB-INF/lib/pay-model-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/pay-web/target/pay-web/WEB-INF/lib/pay-model-1.0-SNAPSHOT.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pay-web/target/pay-web/WEB-INF/lib/pay-serviceimpl-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/pay-web/target/pay-web/WEB-INF/lib/pay-serviceimpl-1.0-SNAPSHOT.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pay-web/target/pay-web/WEB-INF/lib/pay-sso-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/pay-web/target/pay-web/WEB-INF/lib/pay-sso-1.0-SNAPSHOT.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pay-dal/src/main/resources/mybatis/mappers/PermissionMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pay-dal/src/main/resources/mybatis/mappers/RoleMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pay-model/src/main/java/org/andy/pay/enums/IsUse.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pay-sso/src/main/java/org/andy/pay/sso/utils/PasswordHelper.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pay-common/src/main/java/org.andy.pay.common/utils/EncryptUtils.java" afterPath="$PROJECT_DIR$/pay-common/src/main/java/org.andy.pay.common/utils/EncryptUtils.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pay-dal/src/main/java/org/andy/pay/mapper/UserMapper.java" afterPath="$PROJECT_DIR$/pay-dal/src/main/java/org/andy/pay/mapper/UserMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pay-interface/src/main/java/org/andy/pay/service/UserInfoService.java" afterPath="$PROJECT_DIR$/pay-interface/src/main/java/org/andy/pay/service/UserInfoService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pay-model/src/main/java/org/andy/pay/enums/LockedStatus.java" afterPath="$PROJECT_DIR$/pay-model/src/main/java/org/andy/pay/enums/LockedStatus.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pay-serviceimpl/src/main/java/org/andy/pay/service/impl/LogServiceImpl.java" afterPath="$PROJECT_DIR$/pay-serviceimpl/src/main/java/org/andy/pay/service/impl/LogServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pay-serviceimpl/src/main/java/org/andy/pay/service/impl/UserInfoServiceImpl.java" afterPath="$PROJECT_DIR$/pay-serviceimpl/src/main/java/org/andy/pay/service/impl/UserInfoServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pay-sso/pay-sso.iml" afterPath="$PROJECT_DIR$/pay-sso/pay-sso.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pay-sso/src/main/java/org/andy/pay/sso/shiro/MyRealm.java" afterPath="$PROJECT_DIR$/pay-sso/src/main/java/org/andy/pay/sso/shiro/MyRealm.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pay-web/src/main/java/org/andy/pay/controller/UserController.java" afterPath="$PROJECT_DIR$/pay-web/src/main/java/org/andy/pay/controller/UserController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pay-web/src/test/java/controller/UserControllerTestCase.java" afterPath="$PROJECT_DIR$/pay-web/src/test/java/controller/UserControllerTestCase.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pay-web/src/test/java/mappers/TestUserInfoMapper.java" afterPath="$PROJECT_DIR$/pay-web/src/test/java/mappers/TestUserInfoMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pay-web/target/pay-web/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/pay-web/target/pay-web/WEB-INF/web.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pay-dal/src/main/resources/mybatis/mappers/UserMapper.xml" afterPath="$PROJECT_DIR$/pay-dal/src/main/resources/mybatis/mappers/UserMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pay-model/src/main/java/org/andy/pay/model/Role.java" afterPath="$PROJECT_DIR$/pay-model/src/main/java/org/andy/pay/model/Role.java" />
     </list>
     <ignored path="andy.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -75,43 +46,47 @@
     <favorites_list name="andy" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="vertical" split-proportion="0.8294931">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="UserMapper.xml" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/pay-dal/src/main/resources/mybatis/mappers/UserMapper.xml">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="331">
-                  <caret line="38" column="9" selection-start-line="38" selection-start-column="9" selection-end-line="38" selection-end-column="9" />
-                  <folding>
-                    <marker date="1481566817370" expanded="true" signature="1584:1763" ph="select id,mo... tbl_user" />
-                    <marker date="1481566817370" expanded="true" signature="1836:1938" ph="insert into tbl_user... " />
-                    <marker date="1481566817370" expanded="true" signature="2014:2285" ph="update tbl_u... " />
-                    <marker date="1481566817370" expanded="true" signature="2360:2409" ph="update tbl_u... " />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="UserMapper.java" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/pay-dal/src/main/java/org/andy/pay/mapper/UserMapper.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="171">
-                  <caret line="56" column="24" selection-start-line="56" selection-start-column="10" selection-end-line="56" selection-end-column="24" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf>
+      <file leaf-file-name="UserMapper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pay-dal/src/main/java/org/andy/pay/mapper/UserMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="438">
+              <caret line="78" column="38" selection-start-line="78" selection-start-column="16" selection-end-line="78" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserMapper.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pay-dal/src/main/resources/mybatis/mappers/UserMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="353">
+              <caret line="51" column="13" selection-start-line="51" selection-start-column="13" selection-end-line="51" selection-end-column="13" />
+              <folding>
+                <marker date="1482163759066" expanded="true" signature="1584:1763" ph="select id,mo... tbl_user" />
+                <marker date="1482163759066" expanded="true" signature="1836:1938" ph="insert into tbl_user... " />
+                <marker date="1482163759066" expanded="true" signature="2014:2285" ph="update tbl_u... " />
+                <marker date="1482163759066" expanded="true" signature="2360:2409" ph="update tbl_u... " />
+                <marker date="1482163759066" expanded="true" signature="2621:2683" ph="update tbl_u... " />
+                <marker date="1482163759066" expanded="true" signature="2764:2898" ph="insert into tbl_user_role... " />
+                <marker date="1482163759066" expanded="true" signature="2982:3105" ph="update tbl_u... " />
+                <marker date="1482163759066" expanded="true" signature="3215:3404" ph="select role.... tbl_user" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PermissionMapper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pay-dal/src/main/java/org/andy/pay/mapper/PermissionMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="139">
+              <caret line="16" column="56" selection-start-line="16" selection-start-column="56" selection-end-line="16" selection-end-column="56" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -139,13 +114,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/pay-web/src/test/java/mappers/TestUserInfoMapper.java" />
-        <option value="$PROJECT_DIR$/pay-sso/src/main/java/org/andy/pay/sso/common/BaseLogger.java" />
-        <option value="$PROJECT_DIR$/pay-sso/src/main/java/org/andy/pay/sso/common/SessionUser.java" />
-        <option value="$PROJECT_DIR$/pay-common/src/test/java/TestUuid.java" />
-        <option value="$PROJECT_DIR$/pay-web/src/main/resources/spring/spring-applicationContext.xml" />
-        <option value="$PROJECT_DIR$/pay-interface/pom.xml" />
-        <option value="$PROJECT_DIR$/pay-serviceimpl/pay-serviceimpl.iml" />
         <option value="$PROJECT_DIR$/pay-serviceimpl/pom.xml" />
         <option value="$PROJECT_DIR$/pay-dal/src/main/resources/spring-dal/spring-redis.xml" />
         <option value="$PROJECT_DIR$/pay-sso/src/main/java/org/andy/pay/sso/cached/RedisCachedImpl.java" />
@@ -188,8 +156,15 @@
         <option value="$PROJECT_DIR$/pay-dal/src/main/java/org/andy/pay/mapper/RoleMapper.java" />
         <option value="$PROJECT_DIR$/pay-model/src/main/java/org/andy/pay/model/UserRole.java" />
         <option value="$PROJECT_DIR$/pay-dal/src/main/java/org/andy/pay/mapper/LoginLogMapper.java" />
-        <option value="$PROJECT_DIR$/pay-dal/src/main/java/org/andy/pay/mapper/UserMapper.java" />
         <option value="$PROJECT_DIR$/pay-model/src/main/java/org/andy/pay/model/User.java" />
+        <option value="$PROJECT_DIR$/pay-common/src/main/java/org.andy.pay.common/utils/EncryptUtils.java" />
+        <option value="$PROJECT_DIR$/pay-sso/src/main/java/org/andy/pay/sso/utils/PasswordHelper.java" />
+        <option value="$PROJECT_DIR$/pay-model/src/main/java/org/andy/pay/enums/IsUse.java" />
+        <option value="$PROJECT_DIR$/pay-model/src/main/java/org/andy/pay/model/Role.java" />
+        <option value="$PROJECT_DIR$/pay-dal/src/main/resources/mybatis/mappers/RoleMapper.xml" />
+        <option value="$PROJECT_DIR$/pay-dal/src/main/resources/mybatis/mappers/PermissionMapper.xml" />
+        <option value="$PROJECT_DIR$/pay-dal/src/main/java/org/andy/pay/mapper/UserMapper.java" />
+        <option value="$PROJECT_DIR$/pay-dal/src/main/resources/mybatis/mappers/UserMapper.xml" />
       </list>
     </option>
   </component>
@@ -281,20 +256,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="pay-web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="andy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="andy-pay" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="pay-model" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -363,6 +324,260 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="andy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="andy-pay" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pay-model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pay" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="enums" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="andy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="andy-pay" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pay-dal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="andy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="andy-pay" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pay-dal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="enums" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="andy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="andy-pay" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pay-dal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="andy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="andy-pay" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pay-dal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="andy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="andy-pay" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pay-dal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mybatis" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="andy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="andy-pay" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pay-dal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mybatis" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mappers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="andy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="andy-pay" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pay-dal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pay" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="andy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="andy-pay" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pay-dal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pay" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mapper" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="PackagesPane" />
@@ -378,22 +593,22 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="SearchEverywhereHistoryKey" value="jdbcType&#9;PSI&#9;JAVA://org.apache.ibatis.type.JdbcType&#10;DefaultHashService&#9;PSI&#9;JAVA://org.apache.shiro.crypto.hash.DefaultHashService&#10;Md5Hash&#9;FILE&#9;jar:///home/andy/.m2/repository/org/apache/shiro/shiro-core/1.2.6/shiro-core-1.2.6-sources.jar!/org/apache/shiro/crypto/hash/Md5Hash.java&#10;Hex&#9;FILE&#9;jar:///home/andy/.m2/repository/org/apache/shiro/shiro-core/1.2.6/shiro-core-1.2.6-sources.jar!/org/apache/shiro/codec/Hex.java&#10;Base64&#9;PSI&#9;JAVA://org.apache.shiro.codec.Base64&#10;icheck.min.js&#9;null&#9;null&#10;SessionListener&#9;PSI&#9;JAVA://org.apache.shiro.session.SessionListener&#10;Resource&#9;PSI&#9;JAVA://javax.annotation.Resource&#10;springSessionRepositoryFilter&#9;PSI&#9;JAVA://org.springframework.session.config.annotation.web.http.SpringHttpSessionConfiguration#springSessionRepositoryFilter&#10;StringU&#9;FILE&#9;jar:///home/andy/.m2/repository/org/springframework/spring-core/4.2.6.RELEASE/spring-core-4.2.6.RELEASE.jar!/org/springframework/util/StringUtils.class&#10;LockedAccountException&#9;PSI&#9;JAVA://org.apache.shiro.authc.LockedAccountException&#10;StringUtils&#9;PSI&#9;JAVA://org.springframework.util.StringUtils&#10;ConcurrentHash&#9;PSI&#9;JAVA://java.util.concurrent.ConcurrentHashMap&#10;HashMap&#9;PSI&#9;JAVA://java.util.HashMap" />
+    <property name="SearchEverywhereHistoryKey" value="JD&#9;FILE&#9;jar:///home/andy/.m2/repository/org/mybatis/mybatis/3.4.1/mybatis-3.4.1.jar!/org/apache/ibatis/type/JdbcType.class&#10;Role&#9;FILE&#9;file:///media/andy/UbuntuProject/myproject/project/andy-pay/pay-model/src/main/java/org/andy/pay/model/Role.java&#10;Jdb&#9;FILE&#9;jar:///home/andy/.m2/repository/org/mybatis/mybatis/3.4.1/mybatis-3.4.1.jar!/org/apache/ibatis/type/JdbcType.class&#10;Set&#9;FILE&#9;jar:///usr/local/java/devtools/jdk/jdk1.8.0_112/src.zip!/java/util/Set.java&#10;parameterMap&#9;PSI&#9;JAVA://org.apache.ibatis.mapping.ParameterMap&#10;jdbcType&#9;PSI&#9;JAVA://org.apache.ibatis.type.JdbcType&#10;DefaultHashService&#9;PSI&#9;JAVA://org.apache.shiro.crypto.hash.DefaultHashService&#10;Md5Hash&#9;FILE&#9;jar:///home/andy/.m2/repository/org/apache/shiro/shiro-core/1.2.6/shiro-core-1.2.6-sources.jar!/org/apache/shiro/crypto/hash/Md5Hash.java&#10;Hex&#9;FILE&#9;jar:///home/andy/.m2/repository/org/apache/shiro/shiro-core/1.2.6/shiro-core-1.2.6-sources.jar!/org/apache/shiro/codec/Hex.java&#10;Base64&#9;PSI&#9;JAVA://org.apache.shiro.codec.Base64&#10;icheck.min.js&#9;null&#9;null&#10;SessionListener&#9;PSI&#9;JAVA://org.apache.shiro.session.SessionListener&#10;Resource&#9;PSI&#9;JAVA://javax.annotation.Resource&#10;springSessionRepositoryFilter&#9;PSI&#9;JAVA://org.springframework.session.config.annotation.web.http.SpringHttpSessionConfiguration#springSessionRepositoryFilter&#10;StringU&#9;FILE&#9;jar:///home/andy/.m2/repository/org/springframework/spring-core/4.2.6.RELEASE/spring-core-4.2.6.RELEASE.jar!/org/springframework/util/StringUtils.class&#10;LockedAccountException&#9;PSI&#9;JAVA://org.apache.shiro.authc.LockedAccountException&#10;StringUtils&#9;PSI&#9;JAVA://org.springframework.util.StringUtils&#10;ConcurrentHash&#9;PSI&#9;JAVA://java.util.concurrent.ConcurrentHashMap&#10;HashMap&#9;PSI&#9;JAVA://java.util.HashMap" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/pay-web/src/main/webapp/resources/custom/js" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/pay-dal/src/main/resources/mybatis/mappers" />
+      <recent name="$PROJECT_DIR$/pay-web/src/main/webapp/resources/common/js/plugins" />
+      <recent name="$PROJECT_DIR$/pay-web/src/main/webapp/resources/common/js/plugins/form" />
+      <recent name="$PROJECT_DIR$/pay-web/src/main/webapp/WEB-INF/views" />
+      <recent name="$PROJECT_DIR$/pay-common/src/main/java/org.andy.pay.common/utils" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="org.andy.pay.sso.listener" />
       <recent name="mappers" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/pay-web/src/main/webapp/resources/common/js/plugins" />
-      <recent name="$PROJECT_DIR$/pay-web/src/main/webapp/resources/common/js/plugins/form" />
-      <recent name="$PROJECT_DIR$/pay-web/src/main/webapp/WEB-INF/views" />
-      <recent name="$PROJECT_DIR$/pay-common/src/main/java/org.andy.pay.common/utils" />
-      <recent name="$PROJECT_DIR$/pay-dal/src/main/resources/mybatis/mappers" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/pay-web/src/main/webapp/resources/custom/js" />
     </key>
   </component>
   <component name="RunManager" selected="JUnit.TestShrio.testS256Hash">
@@ -1130,7 +1345,7 @@
       <workItem from="1482080861259" duration="149000" />
       <workItem from="1482109667489" duration="9401000" />
       <workItem from="1482126800796" duration="16000" />
-      <workItem from="1482158810869" duration="167000" />
+      <workItem from="1482158810869" duration="5546000" />
     </task>
     <task id="LOCAL-00001" summary="添加md5　加密密匙">
       <created>1480438296573</created>
@@ -1209,7 +1424,14 @@
       <option name="project" value="LOCAL" />
       <updated>1481646277468</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="添加权限相关model">
+      <created>1482159035381</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1482159035381</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1245,7 +1467,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="89828000" />
+    <option name="totallyTimeSpent" value="95207000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="59" y="24" width="1307" height="744" extended-state="6" />
@@ -1272,7 +1494,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40092167" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2723674" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17498021" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="JRebel" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
@@ -1343,7 +1565,8 @@
     <MESSAGE value="测试支付" />
     <MESSAGE value="修改父pom.xml" />
     <MESSAGE value="修改版本依赖" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改版本依赖" />
+    <MESSAGE value="添加权限相关model" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加权限相关model" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1400,64 +1623,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pay-sso/src/main/java/org/andy/pay/sso/listener/SessionListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="21" column="30" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.2.6.RELEASE/spring-web-4.2.6.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="140" column="37" selection-start-line="140" selection-start-column="37" selection-end-line="140" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pay-web/src/main/resources/spring/spring-web-viewController.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="24" column="59" selection-start-line="24" selection-start-column="59" selection-end-line="24" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pay-web/src/main/webapp/WEB-INF/views/user/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="41" column="27" selection-start-line="41" selection-start-column="27" selection-end-line="41" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pay-web/src/main/webapp/WEB-INF/views/user/register.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="410">
-          <caret line="137" column="39" selection-start-line="137" selection-start-column="39" selection-end-line="137" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pay-web/src/main/java/org/andy/pay/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-493">
-          <caret line="69" column="14" selection-start-line="69" selection-start-column="14" selection-end-line="69" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pay-web/src/main/webapp/WEB-INF/views/user/login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="37" column="40" selection-start-line="37" selection-start-column="40" selection-end-line="37" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../pay-alipay/pom.xml" />
-    <entry file="file://$PROJECT_DIR$/pay-alipay/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pay-wechat/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
@@ -1622,13 +1787,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.4.1/mybatis-3.4.1.jar!/org/apache/ibatis/type/JdbcType.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="779">
-          <caret line="45" column="17" selection-start-line="45" selection-start-column="17" selection-end-line="45" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-core/1.2.6/shiro-core-1.2.6-sources.jar!/org/apache/shiro/crypto/hash/DefaultHashService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="188">
@@ -1675,24 +1833,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pay-model/src/main/java/org/andy/pay/model/UserRole.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" column="27" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pay-dal/src/main/resources/mybatis/mappers/LoginLogMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
           <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pay-dal/src/main/java/org/andy/pay/mapper/PermissionMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="7" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -1703,41 +1847,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pay-dal/src/main/java/org/andy/pay/mapper/RoleMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
-          <caret line="12" column="7" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pay-model/src/main/java/org/andy/pay/model/Permission.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pay-model/src/main/java/org/andy/pay/model/Role.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="21" column="12" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pay-model/src/main/java/org/andy/pay/model/RolePermission.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
           <caret line="15" column="33" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pay-dal/src/main/java/org/andy/pay/mapper/UserMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="56" column="24" selection-start-line="56" selection-start-column="10" selection-end-line="56" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1753,15 +1866,165 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/pay-common/src/main/java/org.andy.pay.common/utils/EncryptUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="406">
+          <caret line="145" column="0" selection-start-line="145" selection-start-column="0" selection-end-line="145" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pay-sso/src/main/java/org/andy/pay/sso/utils/PasswordHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="3" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pay-sso/src/main/java/org/andy/pay/sso/utils/SerializeUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-428">
+          <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pay-sso/src/main/java/org/andy/pay/sso/utils/SpringUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.4.1/mybatis-3.4.1.jar!/org/apache/ibatis/mapping/ParameterMap.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-266">
+          <caret line="13" column="22" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/local/java/devtools/jdk/jdk1.8.0_112/src.zip!/java/util/Set.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="25" column="8" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pay-model/src/main/java/org/andy/pay/model/UserRole.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="13" column="10" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pay-model/src/main/java/org/andy/pay/model/Role.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="29" column="39" selection-start-line="29" selection-start-column="39" selection-end-line="29" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pay-model/src/main/java/org/andy/pay/enums/IsUse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="98">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding>
+            <element signature="e#305#306#0" expanded="true" />
+            <element signature="e#341#342#0" expanded="true" />
+            <element signature="e#371#372#0" expanded="true" />
+            <element signature="e#400#401#0" expanded="true" />
+            <element signature="e#441#442#0" expanded="true" />
+            <element signature="e#477#478#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pay-dal/src/main/java/org/andy/pay/mapper/RoleMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="627">
+          <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pay-dal/src/main/resources/mybatis/mappers/RoleMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="22" column="46" selection-start-line="22" selection-start-column="46" selection-end-line="22" selection-end-column="46" />
+          <folding>
+            <marker date="1482162194494" expanded="true" signature="1031:1220" ph="insert into tbl_role... " />
+            <marker date="1482162194494" expanded="true" signature="1293:1409" ph="update tbl_r... " />
+            <marker date="1482162194494" expanded="true" signature="1503:1671" ph="insert into tbl_role_permission... " />
+            <marker date="1482162194494" expanded="true" signature="1769:1896" ph="update tbl_r... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.4.1/mybatis-3.4.1.jar!/org/apache/ibatis/type/JdbcType.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="27" column="13" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pay-model/src/main/java/org/andy/pay/model/Permission.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pay-dal/src/main/resources/mybatis/mappers/PermissionMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+          <folding>
+            <marker date="1482162844587" expanded="true" signature="1078:1283" ph="insert into tbl_permission... " />
+            <marker date="1482162844587" expanded="true" signature="1367:1581" ph="update tbl_p... " />
+            <marker date="1482162844587" expanded="true" signature="1665:1717" ph="update tbl_p... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pay-dal/src/main/java/org/andy/pay/mapper/PermissionMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="16" column="56" selection-start-line="16" selection-start-column="56" selection-end-line="16" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pay-dal/src/main/java/org/andy/pay/mapper/UserMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="438">
+          <caret line="78" column="38" selection-start-line="78" selection-start-column="16" selection-end-line="78" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pay-dal/src/main/resources/mybatis/mappers/UserMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="38" column="9" selection-start-line="38" selection-start-column="9" selection-end-line="38" selection-end-column="9" />
+        <state relative-caret-position="353">
+          <caret line="51" column="13" selection-start-line="51" selection-start-column="13" selection-end-line="51" selection-end-column="13" />
           <folding>
-            <marker date="1481566817370" expanded="true" signature="1584:1763" ph="select id,mo... tbl_user" />
-            <marker date="1481566817370" expanded="true" signature="1836:1938" ph="insert into tbl_user... " />
-            <marker date="1481566817370" expanded="true" signature="2014:2285" ph="update tbl_u... " />
-            <marker date="1481566817370" expanded="true" signature="2360:2409" ph="update tbl_u... " />
+            <marker date="1482163759066" expanded="true" signature="1584:1763" ph="select id,mo... tbl_user" />
+            <marker date="1482163759066" expanded="true" signature="1836:1938" ph="insert into tbl_user... " />
+            <marker date="1482163759066" expanded="true" signature="2014:2285" ph="update tbl_u... " />
+            <marker date="1482163759066" expanded="true" signature="2360:2409" ph="update tbl_u... " />
+            <marker date="1482163759066" expanded="true" signature="2621:2683" ph="update tbl_u... " />
+            <marker date="1482163759066" expanded="true" signature="2764:2898" ph="insert into tbl_user_role... " />
+            <marker date="1482163759066" expanded="true" signature="2982:3105" ph="update tbl_u... " />
+            <marker date="1482163759066" expanded="true" signature="3215:3404" ph="select role.... tbl_user" />
           </folding>
         </state>
       </provider>

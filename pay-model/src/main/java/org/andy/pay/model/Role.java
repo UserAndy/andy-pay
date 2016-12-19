@@ -1,5 +1,7 @@
 package org.andy.pay.model;
 
+import org.andy.pay.enums.IsUse;
+
 import java.util.Date;
 
 /**
@@ -25,8 +27,8 @@ public class Role implements java.io.Serializable{
     private String lastmodify_user;
     //状态
     private int status;
-    //是否使用　0　表示未使用　　1表示已使用
-    private int is_use;
+    //是否使用　0　表示未使用　　1表示已使用    默认设置为使用状态
+    private int is_use = IsUse.USE.getStatus();
 
 
     public String getId() {
