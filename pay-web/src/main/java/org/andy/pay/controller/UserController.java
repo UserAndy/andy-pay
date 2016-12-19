@@ -2,9 +2,7 @@ package org.andy.pay.controller;
 
 import org.andy.pay.common.bean.ResultCode;
 import org.andy.pay.common.utils.StringUtils;
-import org.andy.pay.common.utils.UuidUtils;
-import org.andy.pay.model.LoginLog;
-import org.andy.pay.model.UserInfo;
+import org.andy.pay.model.User;
 import org.andy.pay.service.LogService;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.*;
@@ -18,7 +16,6 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
-import java.util.Date;
 
 /**
  * description: 用户登录操作
@@ -47,7 +44,7 @@ public class UserController {
      */
     @RequestMapping(value="/login",method={RequestMethod.POST})
     @ResponseBody
-    public ResultCode login(UserInfo user, HttpServletRequest request){
+    public ResultCode login(User user, HttpServletRequest request){
         ResultCode resultCode = new ResultCode();
         Subject subject = SecurityUtils.getSubject();
         UsernamePasswordToken token = new UsernamePasswordToken(user.getUsername(),user.getPassword());

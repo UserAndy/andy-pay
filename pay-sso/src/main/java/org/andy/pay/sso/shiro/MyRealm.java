@@ -1,6 +1,6 @@
 package org.andy.pay.sso.shiro;
 
-import org.andy.pay.model.UserInfo;
+import org.andy.pay.model.User;
 import org.andy.pay.service.UserInfoService;
 import org.apache.log4j.Logger;
 import org.apache.shiro.authc.*;
@@ -50,7 +50,7 @@ public class MyRealm extends AuthorizingRealm {
         System.out.println("doGetAuthenticationInfo----->");
         String username = (String)authenticationToken.getPrincipal();  //用户名
         String password = new String((char[])authenticationToken.getCredentials());//密码
-        UserInfo user = userInfoService.findByUsername(username);
+        User user = userInfoService.findByUsername(username);
         if(user == null) {
             throw new UnknownAccountException();//没找到帐号
         }

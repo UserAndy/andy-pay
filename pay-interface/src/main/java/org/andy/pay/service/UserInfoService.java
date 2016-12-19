@@ -1,7 +1,7 @@
 package org.andy.pay.service;
 
 import org.andy.pay.common.bean.ResultCode;
-import org.andy.pay.model.UserInfo;
+import org.andy.pay.model.User;
 
 import javax.servlet.http.HttpServletRequest;
 
@@ -18,7 +18,7 @@ public interface UserInfoService {
      * @param request
      * @return  true 操作成功    false 操作失败
      */
-   public void login(UserInfo info, HttpServletRequest request);
+   public void login(User info, HttpServletRequest request);
 
     /**
      * 删除日志
@@ -29,10 +29,10 @@ public interface UserInfoService {
 
     /**
      *
-     * @param userInfo
+     * @param user
      * @return
      */
-    public ResultCode register(UserInfo userInfo,HttpServletRequest request);
+    public ResultCode register(User user, HttpServletRequest request);
 
 
     /**
@@ -40,7 +40,7 @@ public interface UserInfoService {
      * @param username
      * @return
      */
-    public UserInfo findByUsername(String username);
+    public User findByUsername(String username);
 
 
 }

@@ -3,18 +3,16 @@ package org.andy.pay.service.impl;
 import org.andy.pay.common.bean.ResultCode;
 import org.andy.pay.common.utils.UuidUtils;
 import org.andy.pay.enums.LoginType;
-import org.andy.pay.mapper.LogMapper;
+import org.andy.pay.mapper.LoginLogMapper;
 import org.andy.pay.mapper.UserMapper;
 import org.andy.pay.model.LoginLog;
-import org.andy.pay.model.UserInfo;
+import org.andy.pay.model.User;
 import org.andy.pay.service.UserInfoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.util.StringUtils;
 
 import javax.servlet.http.HttpServletRequest;
 import java.util.Date;
-import java.util.StringTokenizer;
 
 /**
  * 用户信息service
@@ -27,9 +25,9 @@ public class UserInfoServiceImpl implements UserInfoService {
     private UserMapper userMapper;
 
     @Autowired
-    private LogMapper logMapper;
+    private LoginLogMapper loginLogMapper;
 
-    public void login(UserInfo user,HttpServletRequest request) {
+    public void login(User user, HttpServletRequest request) {
         //获取版本信息
         String Agent = request.getHeader("User-Agent");
         LoginLog log = new LoginLog();
@@ -39,7 +37,7 @@ public class UserInfoServiceImpl implements UserInfoService {
         log.setLogin_browser(Agent);
         log.setLogin_ip(request.getRemoteAddr());
         log.setLogin_type(LoginType.WEB.getStatus());
-        logMapper.addLog(log);
+        loginLogMapper.addLog(log);
     }
 
     public boolean deleteUser(String id) {
@@ -48,18 +46,18 @@ public class UserInfoServiceImpl implements UserInfoService {
 
     /**
      * 用户注册(待修改)
-     * @param userInfo
+     * @param user
      * @param request
      * @return
      */
-    public ResultCode register(UserInfo userInfo,HttpServletRequest request) {
+    public ResultCode register(User user, HttpServletRequest request) {
         ResultCode resultCode = new ResultCode();
-        UserInfo info = userMapper.getUesrInfo(userInfo.getUsername());
+        User info = userMapper.getUesrInfo(user.getUsername());
         if(info==null){
-            userInfo.setId(UuidUtils.getUuid());
-            userInfo.setRegister_time(new Date());
-            userInfo.setRegister_ip(request.getRemoteAddr());
-            boolean result = userMapper.addUser(userInfo);
+            user.setId(UuidUtils.getUuid());
+            user.setRegister_time(new Date());
+            user.setRegister_ip(request.getRemoteAddr());
+            boolean result = userMapper.addUser(user);
             if(result){
                 resultCode.setSuccess(true);
             }
@@ -69,7 +67,7 @@ public class UserInfoServiceImpl implements UserInfoService {
         return resultCode;
     }
 
-    public UserInfo findByUsername(String username) {
+    public User findByUsername(String username) {
         return userMapper.getUesrInfo(username);
     }
 }

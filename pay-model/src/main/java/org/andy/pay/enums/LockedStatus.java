@@ -6,6 +6,4 @@ package org.andy.pay.enums;
  */
 public class LockedStatus{
 
-
-
 }

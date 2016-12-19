@@ -7,12 +7,11 @@ import java.util.List;
 
 /**
  * description: 这是日志操作mapper
- *
  * @author: andy
  * Created by 2016/11/12 15:06
  */
 @Repository
-public interface LogMapper {
+public interface LoginLogMapper {
 
     /**
      * 新增log

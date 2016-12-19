@@ -2,7 +2,7 @@ package mappers;
 
 import org.andy.pay.common.utils.UuidUtils;
 import org.andy.pay.mapper.UserMapper;
-import org.andy.pay.model.UserInfo;
+import org.andy.pay.model.User;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -25,7 +25,7 @@ public class TestUserInfoMapper {
      */
     @Test
     public void testlogin(){
-        UserInfo info  = new UserInfo();
+        User info  = new User();
         info.setId(UuidUtils.getUuid());
         info.setUsername(UuidUtils.getUuid());
         info.setPassword("password");
@@ -39,7 +39,7 @@ public class TestUserInfoMapper {
      */
     @Test
     public void testGetUser(){
-        UserInfo info = userMapper.getUesrInfo("13a11b2165534b0992b41621f28d8ac5");
+        User info = userMapper.getUesrInfo("13a11b2165534b0992b41621f28d8ac5");
         System.out.println(info.is_locked());
         if(Boolean.TRUE.equals(info.is_locked())){
             System.out.println("已锁定");
@@ -53,7 +53,7 @@ public class TestUserInfoMapper {
      */
     @Test
     public void testBooleanFalse(){
-        UserInfo info = userMapper.getUesrInfo("username");
+        User info = userMapper.getUesrInfo("username");
         System.out.println(info.is_locked());
         if(Boolean.FALSE.equals(info.is_locked())){
             System.out.println("未锁定");

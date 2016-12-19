@@ -8,7 +8,7 @@ import java.util.Date;
  * @author: andy
  * Created by 2016/11/12 15:03
  */
-public class UserInfo {
+public class User {
     //主键
     private String id;
     //修改日期
@@ -41,6 +41,8 @@ public class UserInfo {
     private String lastlogin_ip;
     //状态　0　未使用 1　使用中　　默认为１
     private int is_use;
+    //盐
+    private String salt;
 
     /**
      * //是否锁定　true　表示已锁定　false　表示未锁定
@@ -49,7 +51,15 @@ public class UserInfo {
      */
     private boolean is_locked;
 
-    public UserInfo() {
+    public String getSalt() {
+        return salt;
+    }
+
+    public void setSalt(String salt) {
+        this.salt = salt;
+    }
+
+    public User() {
     }
 
     public String getId() {
