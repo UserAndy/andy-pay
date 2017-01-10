@@ -18,7 +18,7 @@ public class JsonUtils {
      * @return	json格式的字符串
      */
     public static String toJsonString(Object object){
-        return JSONObject.toJSONString(object);
+        return JSONObject.toJSONString(object,SerializerFeature.PrettyFormat);
     }
 
     /**
