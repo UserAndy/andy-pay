@@ -53,3 +53,9 @@ https: 请求
    https://openapi.alipay.com/gateway.do
 method:
    alipay.data.dataservice.bill.downloadurl.query
+
+11.手机端的账单下载地址
+https: 请求
+   https://openapi.alipay.com/gateway.do
+method:
+   alipay.trade.wap.pay

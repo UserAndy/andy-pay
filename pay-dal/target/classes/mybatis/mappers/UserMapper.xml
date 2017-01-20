@@ -36,5 +36,22 @@
     <select id="getUesrInfo" parameterType="String" resultMap="UserInfoResult">
         <include refid="commsql"/> where username=#{username};
     </select>
+    <update id="changePassword">
+      update tbl_user set  password = #{password} where id=#{userId}
+    </update>
+    <insert id="correlationRoles" parameterType="UserRole">
+      insert into tbl_user_role(id,user_id,role_id,create_user,create_time)values(#{id},#{user_id},#{role_id},#{create_user},#{create_time})
+    </insert>
+    <update id="uncorrelationRoles" parameterType="UserRole">
+       update  tbl_user_role set is_use = 0,lastmodify_time=#{lastmodify_time},lastmodify_user=#{lastmodify_user} where id = #{id}
+    </update>
+    <select id="findRoleByUserId" parameterType="String" parameterMap="java.util.Set">
+        select role.role_name from tbl_user as user left join tbl_user_role as user_role
+          on user.id = user_role.user_id left join tbl_role as role
+          on user_role.role_id = role.id
+    </select>
+    <select id="findPermissionByUserId" parameterType="String" parameterMap="java.util.Set">
+
+    </select>
 </mapper>
 

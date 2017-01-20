@@ -19,7 +19,7 @@ public class BaseRequest implements java.io.Serializable{
     //编码 utf-8,gbk gb2312(必须)
     private String charset;
 
-    //签名算法类型(必须)
+    //签名算法类型(必须)  商户生成签名字符串所使用的签名算法类型，目前支持RSA2和RSA，推荐使用RSA2
     private String sign_type;
 
     //商户请求参数的签名串(必须)
@@ -34,7 +34,7 @@ public class BaseRequest implements java.io.Serializable{
     //(非必须)
     private String app_auth_token;
 
-    // 请求参数的集合,除公共参数外所有请求参数读必须放在该参数中传递
+    // (必须)请求参数的集合,除公共参数外所有请求参数读必须放在该参数中传递
     private String biz_content;
 
     public String getApp_id() {
