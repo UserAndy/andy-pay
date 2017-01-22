@@ -1,3 +1,4 @@
+
 package org.andy.pay.alipay.utils;
 
 import java.text.DateFormat;
@@ -8,10 +9,10 @@ import java.util.Random;
 /**
  * version: 1.0
  * description: 日期工具类
- * author:  Andy
- * date: 2017/01/12
+ * author:Andy
+ * date: 2017/01/22
  */
-public class UtilDate {
+public class AlipayDateUtils {
 	
     /** 年月日时分秒(无下划线) yyyyMMddHHmmss */
     public static final String dtLong                  = "yyyyMMddHHmmss";

@@ -7,6 +7,7 @@ package org.andy.pay.alipay.request;
  * date: 2017/01/10
  */
 public class BaseRequest implements java.io.Serializable{
+
     //应用ID (必须)
     private String app_id;
 

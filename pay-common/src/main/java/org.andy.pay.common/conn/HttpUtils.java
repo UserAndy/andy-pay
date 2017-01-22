@@ -16,8 +16,7 @@ import java.util.Set;
 import java.util.TreeMap;
 
 /**
- * 连接类
- * 
+ * 连接类, 该方法带该景
  * @author Andy
  * 
  */

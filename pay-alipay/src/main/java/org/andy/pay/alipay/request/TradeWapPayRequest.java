@@ -87,7 +87,20 @@ public class TradeWapPayRequest extends BaseRequest{
      */
     private String disable_pay_channels;
 
+    /**
+     * 同步返回url
+     */
+    private String return_url;
+
     public TradeWapPayRequest() {
+    }
+
+    public String getReturn_url() {
+        return return_url;
+    }
+
+    public void setReturn_url(String return_url) {
+        this.return_url = return_url;
     }
 
     public String getNotify_url() {
