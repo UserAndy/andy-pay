@@ -73,9 +73,8 @@ public class AlipaySubmit {
     	try{
 	    	//待请求参数数组
 	        Map<String, String> sPara = buildRequestPara(sParaTemp);
-           /* sPara.put("service",AlipayConfig.service);
-	        sPara.put("_input_charset","utf-8");*/
-	         path  = HttpUtils.setParmas(sPara,"https://openapi.alipay.com/gateway.do",null);
+	        sPara.put("_input_charset","utf-8");
+	         path  = HttpUtils.setParmas(sPara,"https://mapi.alipay.com/gateway.do",null);
         }catch(Exception ex){
         	ex.printStackTrace();
         }

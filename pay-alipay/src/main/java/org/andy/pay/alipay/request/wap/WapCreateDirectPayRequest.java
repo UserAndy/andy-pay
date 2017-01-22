@@ -142,4 +142,164 @@ public class WapCreateDirectPayRequest extends BaseWapRequest implements java.io
      */
     private String enable_paymethod;
 
+
+    public String getOut_trade_no() {
+        return out_trade_no;
+    }
+
+    public void setOut_trade_no(String out_trade_no) {
+        this.out_trade_no = out_trade_no;
+    }
+
+    public String getSubject() {
+        return subject;
+    }
+
+    public void setSubject(String subject) {
+        this.subject = subject;
+    }
+
+    public String getTotal_fee() {
+        return total_fee;
+    }
+
+    public void setTotal_fee(String total_fee) {
+        this.total_fee = total_fee;
+    }
+
+    public String getSeller_id() {
+        return seller_id;
+    }
+
+    public void setSeller_id(String seller_id) {
+        this.seller_id = seller_id;
+    }
+
+    public String getPayment_type() {
+        return payment_type;
+    }
+
+    public void setPayment_type(String payment_type) {
+        this.payment_type = payment_type;
+    }
+
+    public String getShow_url() {
+        return show_url;
+    }
+
+    public void setShow_url(String show_url) {
+        this.show_url = show_url;
+    }
+
+    public String getBody() {
+        return body;
+    }
+
+    public void setBody(String body) {
+        this.body = body;
+    }
+
+    public String getIt_b_pay() {
+        return it_b_pay;
+    }
+
+    public void setIt_b_pay(String it_b_pay) {
+        this.it_b_pay = it_b_pay;
+    }
+
+    public String getExtern_token() {
+        return extern_token;
+    }
+
+    public void setExtern_token(String extern_token) {
+        this.extern_token = extern_token;
+    }
+
+    public double getOtherfee() {
+        return otherfee;
+    }
+
+    public void setOtherfee(double otherfee) {
+        this.otherfee = otherfee;
+    }
+
+    public String getAirticket() {
+        return airticket;
+    }
+
+    public void setAirticket(String airticket) {
+        this.airticket = airticket;
+    }
+
+    public String getRn_check() {
+        return rn_check;
+    }
+
+    public void setRn_check(String rn_check) {
+        this.rn_check = rn_check;
+    }
+
+    public String getBuyer_cert_no() {
+        return buyer_cert_no;
+    }
+
+    public void setBuyer_cert_no(String buyer_cert_no) {
+        this.buyer_cert_no = buyer_cert_no;
+    }
+
+    public String getBuyer_real_name() {
+        return buyer_real_name;
+    }
+
+    public void setBuyer_real_name(String buyer_real_name) {
+        this.buyer_real_name = buyer_real_name;
+    }
+
+    public String getScene() {
+        return scene;
+    }
+
+    public void setScene(String scene) {
+        this.scene = scene;
+    }
+
+    public String getHb_fq_param() {
+        return hb_fq_param;
+    }
+
+    public void setHb_fq_param(String hb_fq_param) {
+        this.hb_fq_param = hb_fq_param;
+    }
+
+    public String getGoods_type() {
+        return goods_type;
+    }
+
+    public void setGoods_type(String goods_type) {
+        this.goods_type = goods_type;
+    }
+
+    public String getApp_pay() {
+        return app_pay;
+    }
+
+    public void setApp_pay(String app_pay) {
+        this.app_pay = app_pay;
+    }
+
+    public String getPromo_params() {
+        return promo_params;
+    }
+
+    public void setPromo_params(String promo_params) {
+        this.promo_params = promo_params;
+    }
+
+    public String getEnable_paymethod() {
+        return enable_paymethod;
+    }
+
+    public void setEnable_paymethod(String enable_paymethod) {
+        this.enable_paymethod = enable_paymethod;
+    }
 }

@@ -1,12 +1,10 @@
 package org.andy.pay.alipay.utils;
 
-
-import org.andy.pay.alipay.request.BaseRequest;
-
+import java.io.File;
+import java.lang.reflect.Array;
 import java.lang.reflect.Field;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Set;
 
 /**
  * version: 1.0
@@ -24,15 +22,18 @@ public class ConvertUtils {
     public static Map<String,String> toMapObject(Object object){
         Map<String,String> result = null;
         if(object!=null){
-            result = new HashMap<String,String>();
-            Field[] array = object.getClass().getDeclaredFields();
             try {
+            result = new HashMap<String,String>();
+            Class<?> objectClass = object.getClass();
+            Field[] array = groupField(objectClass.getDeclaredFields(),objectClass.getSuperclass().getDeclaredFields());
+            System.out.println("-------------------------------------------");
                 if (array != null) {
                     for (Field field : array) {
                         field.setAccessible(true);
                         String name = field.getName();
                         if(name!=null&&!"".equals(name)) {
                             Object obj = field.get(object);
+                            System.out.println("name-->"+name+"    <--->"+obj);
                             if(obj!=null&&!"".equals(obj)) {
                                 result.put(name,String.valueOf(obj));
                             }
@@ -45,19 +46,30 @@ public class ConvertUtils {
         }
         return result;
     }
-/*
-        public static void main(String[] args){
-            BaseRequest request = new BaseRequest();
-            request.setBiz_content("bize_content");
-            request.setVersion("1.0");
-            request.setApp_auth_token("token");
-            request.setTimestamp("timestarmp");
-            request.setApp_id("app_id");
-            request.setCharset("utf-8");
-            Map<String,Object> params = toMapObject(request);
-            for(Map.Entry<String, Object> item: params.entrySet()){
-                System.out.println(item.getKey()+":"+item.getValue());
 
+    /**
+     * 子父类
+     * @param chirldFiled
+     * @param superFiled
+     * @return
+     */
+    private static Field[] groupField(Field[] chirldFiled,Field[] superFiled){
+        int chirldLength = chirldFiled.length>0?chirldFiled.length:0;
+        int superLenth = superFiled.length>0?superFiled.length:0;
+        //
+        Field[] fields =new Field[chirldLength+superLenth];
+        //子类的chifld
+        if(chirldFiled!=null&&chirldFiled.length>0){
+            for(int i=0;i<chirldFiled.length;i++){
+                fields[i] = chirldFiled[i];
+            }
         }
-    }*/
+        //父类
+        if(superFiled!=null&&superFiled.length>0){
+            for(int i=0;i<superFiled.length;i++){
+                fields[chirldLength] = superFiled[i];
+            }
+        }
+        return fields;
+    }
 }
