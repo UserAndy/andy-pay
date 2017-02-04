@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="org.andy.pay.mapper.UserMapper">
-    <resultMap id="UserInfoResult" type="UserInfo">
+    <resultMap id="UserInfoResult" type="User">
         <id property="id" column="id" jdbcType="VARCHAR"/>
         <result property="modifyDate" column="modifyDate" jdbcType="TIMESTAMP"/>
         <result property="username" column="username" jdbcType="VARCHAR"/>
@@ -37,7 +37,7 @@
         <include refid="commsql"/> where username=#{username};
     </select>
     <update id="changePassword">
-      update tbl_user set  password = #{password} where id=#{userId}
+      update tbl_user set password = #{password} where id=#{userId}
     </update>
     <insert id="correlationRoles" parameterType="UserRole">
       insert into tbl_user_role(id,user_id,role_id,create_user,create_time)values(#{id},#{user_id},#{role_id},#{create_user},#{create_time})
@@ -45,12 +45,12 @@
     <update id="uncorrelationRoles" parameterType="UserRole">
        update  tbl_user_role set is_use = 0,lastmodify_time=#{lastmodify_time},lastmodify_user=#{lastmodify_user} where id = #{id}
     </update>
-    <select id="findRoleByUserId" parameterType="String" parameterMap="java.util.Set">
+    <select id="findRoleByUserId" parameterType="String" resultType="java.util.Set">
         select role.role_name from tbl_user as user left join tbl_user_role as user_role
           on user.id = user_role.user_id left join tbl_role as role
           on user_role.role_id = role.id
     </select>
-    <select id="findPermissionByUserId" parameterType="String" parameterMap="java.util.Set">
+    <select id="findPermissionByUserId" parameterType="String" resultType="java.util.Set">
 
     </select>
 </mapper>

@@ -1,8 +1,7 @@
 import org.andy.pay.alipay.request.TradeWapPayRequest;
 import org.andy.pay.alipay.utils.AlipayConfig;
 import org.andy.pay.alipay.utils.AlipaySubmit;
-import org.andy.pay.alipay.utils.ConvertUtils;
-import org.andy.pay.alipay.utils.TestOutputUtils;
+import org.andy.pay.common.utils.ConvertMapUtils;
 import org.junit.Test;
 
 import java.util.Map;
@@ -50,7 +49,7 @@ public class TestTradeWapPayRequest {
         tradeWapPay.setEnable_pay_channels("chan"); //非必须
         tradeWapPay.setDisable_pay_channels("disable_pay_channels");*/
 
-        Map<String,String> params = ConvertUtils.toMapObject(tradeWapPay);
+        Map<String,String> params = ConvertMapUtils.toMapObject(tradeWapPay);
         String path = AlipaySubmit.buildRequest(params);
         System.out.println(path);
     }

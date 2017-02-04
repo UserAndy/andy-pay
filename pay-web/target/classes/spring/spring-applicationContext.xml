@@ -22,7 +22,7 @@
         </property>
    </bean>
     <!--load properties files end-->
-    <import resource="classpath:spring-dal/spring-dal.xml"/>    <!--db spring conf-->
+    <import resource="classpath:spring-dal/spring-dal.xml"/>   <!-- db spring conf-->
     <import resource="classpath:shiro/sso-shiro.xml"/>      <!--spring shiro config-->
     <import resource="classpath:spring-dal/spring-redis.xml"/>  <!--db redis conf-->
 </beans>

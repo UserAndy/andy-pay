@@ -2,6 +2,7 @@ package org.andy.pay.sso.shiro;
 
 import org.andy.pay.model.User;
 import org.andy.pay.service.UserInfoService;
+import org.andy.pay.service.impl.UserInfoServiceImpl;
 import org.apache.log4j.Logger;
 import org.apache.shiro.authc.*;
 import org.apache.shiro.authz.AuthorizationInfo;
@@ -24,13 +25,14 @@ public class MyRealm extends AuthorizingRealm {
 
     private Logger logger = Logger.getLogger(MyRealm.class);
     @Autowired
-    private UserInfoService userInfoService;
+    private UserInfoServiceImpl userInfoService;
 
     @Autowired
     private HttpServletRequest request;
 
     /**
      * 在判断用户权限的时候会调用
+     *
      * @param principalCollection
      * @return　(获取权限信息)
      */
@@ -42,6 +44,7 @@ public class MyRealm extends AuthorizingRealm {
     /**
      * 待改进,需要限制填写次数
      * 在调用 Subject subject = SecurityUtils.getSubject(); 就会执行
+     *
      * @param authenticationToken
      * @return (获取授权身份信息)
      * @throws AuthenticationException

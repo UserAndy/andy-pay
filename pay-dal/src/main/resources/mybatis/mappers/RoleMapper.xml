@@ -14,13 +14,13 @@
     </resultMap>
     <insert id="addRole" parameterType="Role">
        insert into tbl_role(id,role_name,role_descritpion,create_time,create_user,status,is_use)
-       values(#{id},#{role_name},#{role_descritpion,#{create_time,#{create_user,#{status,#{is_use});
+       values(#{id},#{role_name},#{role_descritpion},#{create_time},#{create_user},#{status},#{is_use});
     </insert>
     <update id="remoreRole" parameterType="Role">
        update tbl_role set is_use =0,lastmodify_time=#{lastmodify_time},lastmodify_user=#{lastmodify_user} where id = #{id};
     </update>
     <insert id="correlationPermissions" parameterType="RolePermission">
-      insert into tbl_role_permission(id,role_id,permission_id,create_time,create_user,status)values(#{id},#{role_id},#{permission_id},#{create_time,#{create_user},#{status});
+      insert into tbl_role_permission(id,role_id,permission_id,create_time,create_user,status)values(#{id},#{role_id},#{permission_id},#{create_time},#{create_user},#{status});
     </insert>
     <update id="uncorrelationPermissions" parameterType="RolePermission">
         update tbl_role_permission set is_use=0,lastmodify_time =#{lastmodify_time},lastmodify_user=#{lastmodify_user} where id = #{id};

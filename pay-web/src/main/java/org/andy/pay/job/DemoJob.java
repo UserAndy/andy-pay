@@ -18,7 +18,7 @@ public class DemoJob {
      */
     @Scheduled(cron="0/5 * *  * * ? ")   //每5秒执行一次
     protected void execute() {
-        System.out.println("执行定时任务");
+       /* System.out.println("执行定时任务");*/
     }
 
 }

@@ -4,6 +4,7 @@ import org.andy.pay.common.bean.ResultCode;
 import org.andy.pay.common.utils.StringUtils;
 import org.andy.pay.model.User;
 import org.andy.pay.service.LogService;
+import org.andy.pay.service.impl.UserInfoServiceImpl;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.*;
 import org.apache.shiro.subject.Subject;
@@ -20,6 +21,8 @@ import javax.servlet.http.HttpServletRequest;
 /**
  * description: 用户登录操作
  * Created by andy on 2016/11/8.
+ * 测试帐号: 940753574@qq.com
+ * 密码: 123456
  */
 @RequestMapping("/user")
 @Controller
@@ -29,12 +32,27 @@ public class UserController {
     private LogService logService;
 
     /**
-     * 请求登录方法
+     * 用户基本信息注册
+     */
+    @Autowired
+    private UserInfoServiceImpl userInfoService;
+
+    /**
+     * 登录请求方法
      * @return
      */
     @RequestMapping(value="/login",method={RequestMethod.GET})
     public String login(Model model){
         return "/user/login";
+    }
+
+    /**
+     * 注册请求方法
+     * @return
+     */
+    @RequestMapping(value="/register",method={RequestMethod.GET})
+    public String register(Model model){
+        return "/user/register";
     }
 
     /**
@@ -92,6 +110,17 @@ public class UserController {
         SecurityUtils.getSubject().logout();
         modelAndView.setViewName("/user/login");
         return modelAndView;
+    }
+
+    /**
+     * 注册方法
+     * @return
+     */
+    @RequestMapping(value = "/register",method = {RequestMethod.POST})
+    @ResponseBody
+    public ResultCode register(User user,HttpServletRequest request){
+        ResultCode resultCode = userInfoService.register(user,request);
+        return resultCode;
     }
 
 }
