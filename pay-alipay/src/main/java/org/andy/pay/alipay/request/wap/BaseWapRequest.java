@@ -38,10 +38,7 @@ public class BaseWapRequest implements  java.io.Serializable{
      */
     private String notify_url;
 
-    /**
-     * 页面跳转同步通知页面路径 (非必须)
-     */
-    private String return_url;
+
 
     public String getService() {
         return service;
@@ -91,11 +88,4 @@ public class BaseWapRequest implements  java.io.Serializable{
         this.notify_url = notify_url;
     }
 
-    public String getReturn_url() {
-        return return_url;
-    }
-
-    public void setReturn_url(String return_url) {
-        this.return_url = return_url;
-    }
 }

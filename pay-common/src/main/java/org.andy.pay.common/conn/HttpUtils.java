@@ -43,26 +43,31 @@ public class HttpUtils {
 	 * @return
 	 */
 	public static String defaultConnection(String method, String path, int timeout,
-			int readTimeout, String data) throws Exception {
+			int readTimeout, String data){
 		String result = "";
-		URL url = new URL(path);
-		if (url != null) {
-			HttpURLConnection conn = getConnection(method, url);
-			conn.setConnectTimeout(timeout == 0 ? default_connTime : timeout);
-			conn.setReadTimeout(readTimeout == 0 ? default_readTime
-					: readTimeout);
-			if (data != null && !"".equals(data)) {
-				OutputStream output = conn.getOutputStream();
-				output.write(data.getBytes(default_charset));
-				output.flush();
-				output.close();
+		try {
+			URL url = new URL(path);
+			if (url != null) {
+				HttpURLConnection conn = getConnection(method, url);
+				conn.setConnectTimeout(timeout == 0 ? default_connTime : timeout);
+				conn.setReadTimeout(readTimeout == 0 ? default_readTime
+						: readTimeout);
+				if (data != null && !"".equals(data)) {
+					OutputStream output = conn.getOutputStream();
+					output.write(data.getBytes(default_charset));
+					output.flush();
+					output.close();
+				}
+				if (conn.getResponseCode() == HttpURLConnection.HTTP_OK) {
+					InputStream input = conn.getInputStream();
+					result = inputToStr(input);
+					input.close();
+					conn.disconnect();
+				}
 			}
-			if (conn.getResponseCode() == HttpURLConnection.HTTP_OK) {
-				InputStream input = conn.getInputStream();
-				result = inputToStr(input);
-				input.close();
-				conn.disconnect();
-			}
+		}catch(Exception ex){
+			ex.printStackTrace();
+			result = "";
 		}
 		return result;
 	}

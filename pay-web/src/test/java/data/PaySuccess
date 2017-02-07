@@ -1,0 +1,17 @@
+--支付的成功的同步返回的基本信息
+
+key--->notify_time   name-->2017-02-07 11:39:10
+key--->subject   name-->商品标题
+key--->sign   name-->f0bb614c491449f3eaa36388077a8ce3
+key--->body   name-->商品详情
+key--->is_success   name-->T
+key--->notify_id   name-->RqPnCoPT3K9%2Fvwbh3InZdavV8IILPs7b14GrqOjEj7Agzk3VVzW4tZCbDVO6eXBqw54r
+key--->notify_type   name-->trade_status_sync
+key--->payment_type   name-->1
+key--->out_trade_no   name-->20170122000111
+key--->service   name-->alipay.wap.create.direct.pay.by.user
+key--->total_fee   name-->0.01
+key--->trade_status   name-->TRADE_SUCCESS
+key--->trade_no   name-->2017020721001004020214567923
+key--->sign_type   name-->MD5
+key--->seller_id   name-->2088021440106798

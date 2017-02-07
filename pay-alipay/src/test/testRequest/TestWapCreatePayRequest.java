@@ -69,12 +69,4 @@ public class TestWapCreatePayRequest {
         String path = AlipaySubmit.buildRequest(params);
         System.out.println(path);
     }
-
-    /**
-     * 测试信息
-     */
-    @Test
-    public void testGrpup(){
-
-    }
 }

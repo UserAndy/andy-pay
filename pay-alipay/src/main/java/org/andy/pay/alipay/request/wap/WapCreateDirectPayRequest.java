@@ -8,6 +8,13 @@ package org.andy.pay.alipay.request.wap;
  */
 public class WapCreateDirectPayRequest extends BaseWapRequest implements java.io.Serializable{
 
+
+    /**
+     * 页面跳转同步通知页面路径 (非必须)
+     */
+    private String return_url;
+
+
     /**
      * 商户网站唯一订单号 (必填)
      */
@@ -67,7 +74,7 @@ public class WapCreateDirectPayRequest extends BaseWapRequest implements java.io
      * 单位为RMB-Yuan。
      * 取值范围为[0.01,100000000.00]，精确到小数点后两位。
      */
-    private double otherfee;
+    private String otherfee;
 
     /**
      * 航旅订单金额 (非必填)
@@ -215,11 +222,11 @@ public class WapCreateDirectPayRequest extends BaseWapRequest implements java.io
         this.extern_token = extern_token;
     }
 
-    public double getOtherfee() {
+    public String getOtherfee() {
         return otherfee;
     }
 
-    public void setOtherfee(double otherfee) {
+    public void setOtherfee(String otherfee) {
         this.otherfee = otherfee;
     }
 
@@ -301,5 +308,13 @@ public class WapCreateDirectPayRequest extends BaseWapRequest implements java.io
 
     public void setEnable_paymethod(String enable_paymethod) {
         this.enable_paymethod = enable_paymethod;
+    }
+
+    public String getReturn_url() {
+        return return_url;
+    }
+
+    public void setReturn_url(String return_url) {
+        this.return_url = return_url;
     }
 }

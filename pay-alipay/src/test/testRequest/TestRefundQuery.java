@@ -1,5 +1,6 @@
 import org.andy.pay.alipay.request.RefundQueryRequest;
 import org.andy.pay.alipay.utils.TestOutputUtils;
+import org.andy.pay.common.conn.HttpUtils;
 import org.junit.Test;
 
 /**
@@ -16,6 +17,9 @@ public class TestRefundQuery {
     @Test
     public void testRefundQueryRequest(){
         RefundQueryRequest refundQuery = new RefundQueryRequest();
+        refundQuery.setApp_id("");
+        String result = HttpUtils.defaultConnection("post","https://openapi.alipay.com/gateway.do",5000,5000,"data");
+        System.out.println(result);
         TestOutputUtils.output(refundQuery);
     }
 
