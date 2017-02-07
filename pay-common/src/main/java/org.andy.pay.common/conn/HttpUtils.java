@@ -14,6 +14,8 @@ import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Set;
 import java.util.TreeMap;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  * 连接类, 该方法带该景
@@ -21,11 +23,22 @@ import java.util.TreeMap;
  * 
  */
 public class HttpUtils {
-	public static final  int default_connTime = 8000;					//默认连接超时时间
+	/**
+	 * 默认连接超时时间
+	 */
+	public static final  int default_connTime = 8000;
+
+	/**
+	 * 默认读取超时时间
+	 */
 	public static final int default_readTime = 8000;					//默认读取超时时间
+
+	/**
+	 * 默认的请求编码格式
+	 */
 	protected static String default_charset = "utf-8";
 
-	
+	private static final Logger logger = Logger.getLogger(HttpUtils.class.getName());
 	
 	/**
 	 * http请求
@@ -42,8 +55,9 @@ public class HttpUtils {
 	 *            数据
 	 * @return
 	 */
-	public static String defaultConnection(String method, String path, int timeout,
+	private static String defaultConnection(String method, String path, int timeout,
 			int readTimeout, String data){
+		System.out.println(path);
 		String result = "";
 		try {
 			URL url = new URL(path);
@@ -58,11 +72,14 @@ public class HttpUtils {
 					output.flush();
 					output.close();
 				}
-				if (conn.getResponseCode() == HttpURLConnection.HTTP_OK) {
+				int responseCode = conn.getResponseCode();
+				if (responseCode == HttpURLConnection.HTTP_OK) {
 					InputStream input = conn.getInputStream();
 					result = inputToStr(input);
 					input.close();
 					conn.disconnect();
+				}else{						//如果不成功,则将状态码写在log中,以便查看
+					logger.log(Level.WARNING,"http request code---->"+responseCode);
 				}
 			}
 		}catch(Exception ex){
@@ -211,11 +228,12 @@ public class HttpUtils {
 	 *            输入的数据 允许为空
 	 * @return
 	 */
-	public String HttpDefaultExecute(String method, String path,
+	public static String HttpDefaultExecute(String method, String path,
 			Map<String, String> map, String data) {
 		String result = "";
 		try {
-			String url = setParmas((TreeMap<String, String>) map, path, "");
+			String url = setParmas((Map<String, String>) map, path, "");
+			url = url.replace(" ","%20");
 			result = defaultConnection(method, url, default_connTime,
 					default_readTime, data);
 		} catch (Exception e) {
@@ -233,7 +251,7 @@ public class HttpUtils {
 	 * @param data   输入的数据 允许为空
 	 * @return
 	 */
-	public String HttpsDefaultExecute(String method, String path,
+	public static String HttpsDefaultExecute(String method, String path,
 			Map<String, String> map, String data) {
 		String result = "";
 		try {

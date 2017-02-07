@@ -2,12 +2,16 @@ import org.andy.pay.alipay.request.TradeQueryRequest;
 import org.andy.pay.alipay.respose.TradeFundBill;
 import org.andy.pay.alipay.respose.TradeQueryRespose;
 import org.andy.pay.alipay.respose.VoucherDetail;
+import org.andy.pay.alipay.utils.AlipayHttpUtils;
+import org.andy.pay.alipay.utils.AlipaySubmit;
+import org.andy.pay.common.utils.ConvertMapUtils;
 import org.andy.pay.common.utils.JsonUtils;
 import org.junit.Test;
 
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+import java.util.Map;
 
 /**
  * version: 1.0
@@ -19,23 +23,26 @@ public class TestTradeQuery {
 
     /**
      * 测试交易查询请求对象
+     * (待测试)
      */
     @Test
     public void testTradeRequestMethod(){
         TradeQueryRequest  tradeQuery = new TradeQueryRequest();
-        tradeQuery.setOut_trade_no("20150320010101001");
-        tradeQuery.setTrade_no("2014112611001004680 073956707");
-        tradeQuery.setApp_auth_token("token");
-        tradeQuery.setApp_id("201402101");
-        tradeQuery.setBiz_content("bizcontent");
+        tradeQuery.setOut_trade_no("20170122000111");
+        tradeQuery.setTrade_no("2017020721001004020214567923");
+        tradeQuery.setApp_id("2016012501118872");
         tradeQuery.setCharset("utf-8");
         tradeQuery.setFormat("json");
-        tradeQuery.setMethod("method");
+        tradeQuery.setMethod("alipay.trade.query");
         tradeQuery.setSign("sign");
-        tradeQuery.setSign_type("md5");
-        tradeQuery.setTimestamp("2014-12-12 12:11:11");
+        tradeQuery.setSign_type("RSA2");
+        tradeQuery.setTimestamp("2017-02-08 12:11:11");
         tradeQuery.setVersion("1.0");
-        System.out.println(JsonUtils.toJsonString(tradeQuery));
+        tradeQuery.setBiz_content("{\"out_trade_no\":\"20170122000111\",\"trade_no\":\"2017020721001004020214567923\"}");
+        Map<String,String> params = ConvertMapUtils.toMapObject(tradeQuery);
+        params = AlipaySubmit.buildRequestPara(params);
+        String value = AlipayHttpUtils.HttpDefaultExecute(params,"");
+        System.out.println(value);
     }
 
     /**

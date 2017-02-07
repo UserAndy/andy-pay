@@ -11,6 +11,7 @@ import java.util.Map;
  * description: 测试手机网站支付请求
  * author:Andy
  * date: 2017/01/12
+ * (测试通过)
  */
 public class TestWapCreatePayRequest {
 
@@ -33,8 +34,8 @@ public class TestWapCreatePayRequest {
         sParaTemp.put("total_fee","0.01");
         sParaTemp.put("show_url","http://www.taobao.com/product/113714.html");
         sParaTemp.put("body","商品描述");
-        sParaTemp.put("notify_url","http://localhost:8080/pay-web/alipay/notifyUrl");
-        sParaTemp.put("return_url","http://localhost:8080/pay-web/alipay/returnUrl");
+        sParaTemp.put("notify_url","http://localhost:8080/paytest/alipay/notifyUrl");
+        sParaTemp.put("return_url","http://localhost:8080/paytest/alipay/returnUrl");
         sParaTemp.put("sign","");
         sParaTemp.put("sign_type","RSA");
         sParaTemp.put("it_b_pay","15d");

@@ -18,8 +18,6 @@ public class TestRefundQuery {
     public void testRefundQueryRequest(){
         RefundQueryRequest refundQuery = new RefundQueryRequest();
         refundQuery.setApp_id("");
-        String result = HttpUtils.defaultConnection("post","https://openapi.alipay.com/gateway.do",5000,5000,"data");
-        System.out.println(result);
         TestOutputUtils.output(refundQuery);
     }
 

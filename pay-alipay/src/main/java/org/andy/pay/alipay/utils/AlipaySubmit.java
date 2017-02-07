@@ -37,7 +37,7 @@ public class AlipaySubmit {
      * @param sPara 要签名的数组
      * @return 签名结果字符串
      */
-	public static String buildRequestMysign(Map<String, String> sPara) {
+	private static String buildRequestMysign(Map<String, String> sPara) {
     	String prestr = AlipayCore.createLinkString(sPara); //把数组所有元素，按照“参数=参数值”的模式用“&”字符拼接成字符串
         String mysign = "";
         if(AlipayConfig.sign_type.equals("MD5") ) {
@@ -51,7 +51,7 @@ public class AlipaySubmit {
      * @param sParaTemp 请求前的参数数组
      * @return 要请求的参数数组
      */
-    private static Map<String, String> buildRequestPara(Map<String, String> sParaTemp) {
+    public static Map<String, String> buildRequestPara(Map<String, String> sParaTemp) {
         //除去数组中的空值和签名参数
         Map<String, String> sPara = AlipayCore.paraFilter(sParaTemp);
         //生成签名结果
