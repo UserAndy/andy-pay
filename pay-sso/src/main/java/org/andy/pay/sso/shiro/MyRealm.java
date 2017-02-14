@@ -26,9 +26,9 @@ public class MyRealm extends AuthorizingRealm {
     private Logger logger = Logger.getLogger(MyRealm.class);
     @Autowired
     private UserInfoServiceImpl userInfoService;
-
+/*
     @Autowired
-    private HttpServletRequest request;
+    private HttpServletRequest request;*/
 
     /**
      * 在判断用户权限的时候会调用
@@ -69,7 +69,7 @@ public class MyRealm extends AuthorizingRealm {
                 user.getPassword(), //密码 //salt=username+salt
                 getName()); //realm name
         //
-        userInfoService.login(user,request);
+        userInfoService.login(user);
         return authenticationInfo;
     }
 }

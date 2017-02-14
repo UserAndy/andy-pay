@@ -18,7 +18,7 @@ public interface UserInfoService {
      * @param request
      * @return  true 操作成功    false 操作失败
      */
-   public void login(User info, HttpServletRequest request);
+   public void login(User info);
 
     /**
      * 删除日志

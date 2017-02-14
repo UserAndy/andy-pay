@@ -1,4 +1,4 @@
-package org.andy.pay.model.alipay;
+package org.andy.pay.alipay.model;
 
 import org.andy.pay.alipay.request.wap.WapCreateDirectPayRequest;
 

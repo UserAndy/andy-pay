@@ -27,15 +27,15 @@ public class UserInfoServiceImpl implements UserInfoService {
     @Autowired
     private LoginLogMapper loginLogMapper;
 
-    public void login(User user, HttpServletRequest request) {
+    public void login(User user) {
         //获取版本信息
-        String Agent = request.getHeader("User-Agent");
+      /*  String Agent = request.getHeader("User-Agent");*/
         LoginLog log = new LoginLog();
         log.setUser_id(user.getId());
         log.setLogin_time(new Date());
         log.setId(UuidUtils.getUuid());
-        log.setLogin_browser(Agent);
-        log.setLogin_ip(request.getRemoteAddr());
+        /*log.setLogin_browser(Agent);
+        log.setLogin_ip(request.getRemoteAddr());*/
         log.setLogin_type(LoginType.WEB.getStatus());
         loginLogMapper.addLog(log);
     }

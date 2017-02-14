@@ -4,8 +4,6 @@ import com.alipay.api.request.AlipayTradeQueryRequest;
 import com.alipay.api.response.AlipayTradeQueryResponse;
 import org.junit.Test;
 
-import static org.andy.pay.alipay.utils.AlipayConfig.sign_type;
-
 /**
  * Created by andy on 17-2-7.
  */
