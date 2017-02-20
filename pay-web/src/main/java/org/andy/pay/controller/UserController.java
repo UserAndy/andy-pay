@@ -17,6 +17,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 
 /**
  * description: 用户登录操作
@@ -58,11 +59,12 @@ public class UserController {
     /**
      * 用户登录
      * @param
-     * @return http://localhost:8080/pay/login
+     * @return http://localhost:8080/pay-web/login
      */
     @RequestMapping(value="/login",method={RequestMethod.POST})
     @ResponseBody
     public ResultCode login(User user, HttpServletRequest request){
+        HttpSession httpSession = request.getSession();
         ResultCode resultCode = new ResultCode();
         Subject subject = SecurityUtils.getSubject();
         UsernamePasswordToken token = new UsernamePasswordToken(user.getUsername(),user.getPassword());
@@ -76,6 +78,8 @@ public class UserController {
         boolean mobileName = false;
         try {
             subject.login(token);
+            User sessionUser = userInfoService.findByUsername(user.getUsername());
+            httpSession.setAttribute("user",sessionUser);
         } catch (UnknownAccountException uae) {
             resultCode.setErrormsg("账户不存在!");
             message = "账户不存在!";

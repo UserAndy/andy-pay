@@ -32,7 +32,6 @@ public class MyRealm extends AuthorizingRealm {
 
     /**
      * 在判断用户权限的时候会调用
-     *
      * @param principalCollection
      * @return　(获取权限信息)
      */
@@ -44,7 +43,7 @@ public class MyRealm extends AuthorizingRealm {
     /**
      * 待改进,需要限制填写次数
      * 在调用 Subject subject = SecurityUtils.getSubject(); 就会执行
-     *
+     * e10adc3949ba59abbe56e057f20f883e
      * @param authenticationToken
      * @return (获取授权身份信息)
      * @throws AuthenticationException

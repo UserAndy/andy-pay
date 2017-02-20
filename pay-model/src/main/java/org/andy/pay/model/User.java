@@ -8,7 +8,7 @@ import java.util.Date;
  * @author: andy
  * Created by 2016/11/12 15:03
  */
-public class User {
+public class User implements java.io.Serializable{
     //主键
     private String id;
     //修改日期

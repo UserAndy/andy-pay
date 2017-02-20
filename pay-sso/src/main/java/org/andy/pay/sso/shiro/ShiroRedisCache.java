@@ -82,7 +82,6 @@ public V get(K key) throws CacheException {
  * 存储key
 
 */
-
 public V put(K key, V value) throws CacheException {
 	logger.debug("根据key从存储 key [" + key + "]");
 	 try {

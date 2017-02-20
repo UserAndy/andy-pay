@@ -18,7 +18,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="renderer" content="webkit">
-        <title>用户登陆</title>
+        <title>用户登录</title>
         <meta name="keywords" content="">
         <meta name="description" content="">
         <link href="<%=basePath%>resources/common/css/bootstrap.min.css?v=3.4.0" rel="stylesheet">
@@ -56,6 +56,8 @@
     <script>
                 $(document).ready(function () {
                     $("#btnAjaxSubmit").click(function () {
+                        console.log("加密前-->"+$("#password").val());
+                        console.log("加密后-->"+md5($("#password").val()));
                         $("#password").val(md5($("#password").val()));
                         var options = {
                             url: 'user/login',
@@ -64,10 +66,15 @@
                             dataType:"json",
                             success:function(data) {
                                 if (data.success==true){
+                                    console.log("登录成功!");
                                     window.location.href="user/index";
                                 }else{
+                                    $("#password").val("");
                                    $(".errormsg").html("").html(data.errormsg);
                                 }
+                            },
+                            error:function(data){
+                                $("#password").val("");
                             },
                             beforeSubmit: function(arr, $form, options) {
 
