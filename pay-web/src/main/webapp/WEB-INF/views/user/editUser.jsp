@@ -1,8 +1,8 @@
 <%--
-  Created by IntelliJ IDEA. 待修改
+  Created by IntelliJ IDEA.
   User: andy
-  Date: 17-2-21
-  Time: 下午4:30
+  Date: 17-2-22
+  Time: 上午12:35
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
@@ -11,4 +11,11 @@
     String basePath = request.getScheme()+ "://" +request.getServerName()+ ":"+request.getServerPort()+path+ "/" ;
 %>
 <base href="<%=basePath%>">
-查看用户信息
+<html>
+<head>
+    <title>标题</title>
+</head>
+<body>
+    编辑用户信息
+</body>
+</html>

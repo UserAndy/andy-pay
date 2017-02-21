@@ -85,10 +85,8 @@
                                 <hr/>
                                 <p>
                                     <button class="btn btn-primary" type="button"><i class="fa fa-search"></i>&nbsp;查询</button>
-                                    <button class="btn btn-success" type="button"><i class="fa fa-save"></i>&nbsp;添加</button>
-                                    <button class="btn btn-info" type="button" id="result" onclick="getContent()"><i class="fa fa-paste"></i>编辑</button>
-                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal111" onclick="getContent();">1111</button>
-                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal222" onclick="getload();">load</button>
+                                    <button class="btn btn-success" type="button" onclick="addUser();"><i class="fa fa-save"></i>&nbsp;添加</button>
+                                   <%-- <button class="btn btn-info" type="button" id="result" onclick="getContent()"><i class="fa fa-paste"></i>编辑</button>--%>
                                 </p>
                                 <!--button end-->
                             </div>
@@ -123,13 +121,13 @@
                                            已冻结
                                         </td>
                                         <td class="center">
-                                            <a class="btn btn-white btn-bitbucket" href="javascript:alert('查看更多')">
+                                            <a class="btn btn-white btn-bitbucket" href="javascript:lookUser();">
                                                 <i class="fa fa-eye"></i>
                                             </a>
-                                            <a class="btn btn-white btn-bitbucket" href="javascript:alert('编辑')">
+                                            <a class="btn btn-white btn-bitbucket" href="javascript:editUser();">
                                                 <i class="fa fa-edit"></i>
                                             </a>
-                                            <a class="btn btn-white btn-bitbucket" href="javascript:alert('锁定')">
+                                            <a class="btn btn-white btn-bitbucket" href="javascript:deleteUser();">
                                                 <i class="fa fa-lock"></i>
                                             </a>
                                         </td>
@@ -147,13 +145,13 @@
                                        <td class="center">2017-02-11</td>
                                        <td class="center">正常</td>
                                        <td class="center">
-                                           <a class="btn btn-white btn-bitbucket" href="javascript:alert('查看更多')">
+                                           <a class="btn btn-white btn-bitbucket" href="javascript:lookUser();">
                                                <i class="fa fa-eye"></i>
                                            </a>
-                                           <a class="btn btn-white btn-bitbucket" href="javascript:alert('编辑')">
+                                           <a class="btn btn-white btn-bitbucket" href="javascript:editUser();">
                                                <i class="fa fa-edit"></i>
                                            </a>
-                                           <a class="btn btn-white btn-bitbucket" href="javascript:alert('锁定')">
+                                           <a class="btn btn-white btn-bitbucket" href="javascript:deleteUser();">
                                                <i class="fa fa-lock"></i>
                                            </a>
                                        </td>
@@ -173,13 +171,13 @@
                                            正常
                                        </td>
                                        <td class="center">
-                                           <a class="btn btn-white btn-bitbucket" href="javascript:alert('查看更多')">
+                                           <a class="btn btn-white btn-bitbucket" href="javascript:lookUser();">
                                                <i class="fa fa-eye"></i>
                                            </a>
-                                           <a class="btn btn-white btn-bitbucket" href="javascript:alert('编辑')">
+                                           <a class="btn btn-white btn-bitbucket" href="javascript:editUser();">
                                                <i class="fa fa-edit"></i>
                                            </a>
-                                           <a class="btn btn-white btn-bitbucket" href="javascript:alert('锁定')">
+                                           <a class="btn btn-white btn-bitbucket" href="javascript:deleteUser();">
                                                <i class="fa fa-lock"></i>
                                            </a>
                                        </td>
@@ -214,6 +212,8 @@
 
 <!-- Custom and plugin javascript -->
 <script src="<%=basePath%>resources/common/js/hplus.js?v=2.2.0"></script>
+<!--弹出框-->
+<script src="<%=basePath%>resources/common/js/plugins/layer/layer.js"></script>
 
 <!-- Page-Level Scripts -->
 <script>
@@ -243,10 +243,57 @@
         $("#modal222").load("http://localhost:8080/pay-web/user/userDetail");
     }
 
+    /**
+     * 删除用户
+     */
+    function deleteUser(){
+        layer.confirm('是否锁定该用户?', {
+            btn: ['确定','取消'] //按钮
+        }, function(){
+            layer.msg('已锁定', {icon: 1});
+        }, function(){
+            layer.close();
+        });
+    }
 
-    //
+    /**
+     * 编辑用户
+     */
+    function editUser(){
+        layer.open({
+            type: 2,
+            area: ['700px', '530px'],
+            fixed: false, //不固定
+            maxmin: true,
+            content: 'http://localhost:8080/pay-web/user/editUser'
+        });
+    }
 
+    /**
+     * 查看用户详细信息
+     */
+    function lookUser(){
+        layer.open({
+            type: 2,
+            area: ['700px', '530px'],
+            fixed: false, //不固定
+            maxmin: true,
+            content: 'http://localhost:8080/pay-web/user/userDetail'
+        });
+    }
 
+    /**
+     * 添加用户
+     */
+    function addUser(){
+        layer.open({
+            type: 2,
+            area: ['700px', '530px'],
+            fixed: false, //不固定
+            maxmin: true,
+            content: 'http://localhost:8080/pay-web/user/adduser'
+        });
+    }
 </script>
 </body>
 </html>

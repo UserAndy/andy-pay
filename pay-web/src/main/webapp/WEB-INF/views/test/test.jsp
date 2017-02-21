@@ -12,7 +12,7 @@
 %>
 <base href="<%=basePath%>">
 <script src="<%=basePath%>resources/common/js/jquery-2.1.1.min.js"></script>
-<script src="<%=basePath%>resources/common/js/plugins/layer/layer.min.js"></script>
+<script src="<%=basePath%>resources/common/js/plugins/layer/layer.js"></script>
 <html>
 <head>
     <title>测试地址</title>

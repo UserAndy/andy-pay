@@ -2,6 +2,7 @@ package org.andy.pay.controller;
 
 import org.andy.pay.basic.BasicController;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
@@ -55,6 +56,30 @@ public class UserController extends BasicController{
     }
 
     /**
+     * 编辑用户信息
+     * @param request
+     * @return
+     */
+    @RequestMapping(value ="editUser",method = {RequestMethod.GET})
+    public ModelAndView editUser(HttpServletRequest request){
+        ModelAndView modelAndView = new ModelAndView();
+        modelAndView.setViewName("/user/editUser");
+        return modelAndView;
+    }
+
+    /**
+     * 添加用户
+     * @param request
+     */
+    @RequestMapping(value ="adduser",method = {RequestMethod.GET})
+    public ModelAndView addUser(HttpServletRequest request){
+        ModelAndView modelAndView = new ModelAndView();
+        modelAndView.setViewName("/user/adduser");
+        return modelAndView;
+    }
+
+
+    /**
      * 用户详细信息
      * @param request   user/test
      * @return
@@ -71,21 +96,11 @@ public class UserController extends BasicController{
      * @param request http://localhost:8080/pay-web/test/test
      * @return
      */
-    @RequestMapping(value ="test",method = {RequestMethod.GET})
+    @RequestMapping(value ="test/test",method = {RequestMethod.GET})
     public ModelAndView testTest(HttpServletRequest request){
         ModelAndView modelAndView = new ModelAndView();
-        modelAndView.setViewName("/user/test");
+        modelAndView.setViewName("/test/test");
         return modelAndView;
-    }
-
-
-    /**
-     * 添加用户
-     * @param request
-     */
-    @RequestMapping(value ="adduser",method = {RequestMethod.GET})
-    public void addUser(HttpServletRequest request){
-
     }
 
 }

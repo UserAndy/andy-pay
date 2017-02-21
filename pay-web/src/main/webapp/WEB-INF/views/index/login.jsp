@@ -60,7 +60,7 @@
                         console.log("加密后-->"+md5($("#password").val()));
                         $("#password").val(md5($("#password").val()));
                         var options = {
-                            url: 'user/login',
+                            url: 'login/login',
                             type: 'POST',
                             data: $("#formSubmit").serialize(),
                             dataType:"json",
