@@ -11,6 +11,7 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import java.util.Date;
+import java.util.List;
 
 /**
  * @description: 测试添加登录日志的基本信息
@@ -40,5 +41,14 @@ public class TestLoginLogMapper {
         log.setLogin_operateSystem("windows 10");
         boolean result = loginLogMapper.addLog(log);
         Assert.assertEquals(true,result);
+    }
+
+    /**
+     * 测试添加日志信息
+     */
+    @Test
+    public void testGetUserLog(){
+        List<LoginLog> login = loginLogMapper.getUserLog("aabfcd75cea84568b2e40ec6c3155d83");
+        Assert.assertNotNull(login);
     }
 }

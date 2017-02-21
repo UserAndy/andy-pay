@@ -1,6 +1,7 @@
 package org.andy.pay.mapper;
 
 import org.andy.pay.model.LoginLog;
+import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
@@ -34,5 +35,5 @@ public interface LoginLogMapper {
      * @param userId
      * @return
      */
-    List<LoginLog> getUserLog(String userId);
+    List<LoginLog> getUserLog(@Param("userId")String userId);
 }

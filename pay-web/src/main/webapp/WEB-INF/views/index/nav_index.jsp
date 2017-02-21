@@ -38,7 +38,6 @@
                 <div class="logo-element">
                     H+
                 </div>
-
             </li>
             <li class="active">
                 <a href="javascript:void(0);"><i class="fa fa-th-large"></i> <span class="nav-label">主页</span> <span class="fa arrow"></span></a>
@@ -48,10 +47,16 @@
                 </ul>
             </li>
             <li>
-                <a href="javascript:void(0);"><i class="fa fa-cutlery"></i> <span class="nav-label">系统信息</span><span class="fa arrow"></span></a>
+                <a href="javascript:void(0);"><i class="fa fa-group"></i> <span class="nav-label">用户管理</span><span class="fa arrow"></span></a>
                 <ul class="nav nav-second-level">
-                    <li><a href="<%=basePath%>system/logs">登录日志</a></li>
-                    <li><a href="<%=basePath%>system/info">展示信息</a></li>
+                    <li><a href="<%=basePath%>user/list"><i class="fa fa-user"></i>正常用户</a></li>
+                    <li><a href="<%=basePath%>user/lockuser"><i class="fa fa-user"></i>已冻结用户列表</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="javascript:void(0);"><i class="fa fa-gears"></i> <span class="nav-label">系统信息</span><span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level">
+                    <li><a href="<%=basePath%>system/alllogs"><i class="fa fa-history"></i>登录日志</a></li>
                 </ul>
             </li>
         </ul>

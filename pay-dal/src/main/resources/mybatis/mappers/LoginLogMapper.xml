@@ -12,6 +12,9 @@
         <result property="login_operateSystem" column="login_operateSystem" jdbcType="VARCHAR"/>
         <result property="is_use" column="is_use" jdbcType="INTEGER"/>
     </resultMap>
+    <sql id="commSql">
+        select id,user_id,login_time ,exit_time,login_ip,login_type,login_browser,login_operateSystem,is_use from tbl_loginlog
+    </sql>
     <insert id="addLog" parameterType="LoginLog">
       insert into tbl_loginlog(id,user_id,login_time,exit_time,login_ip,login_type,login_browser,login_operateSystem,is_use)
       values(#{id},#{user_id},#{login_time},#{exit_time},#{login_ip},#{login_type},#{login_browser},#{login_operateSystem},#{is_use})
@@ -19,4 +22,7 @@
     <insert id="modifyLogStatus" parameterType="LoginLog">
       update tbl_loginlog set is_use=#{is_use} where id=#{id}
     </insert>
+    <select id="getUserLog" parameterType="String" resultMap="LogInfoResult">
+        <include refid="commSql"/>where user_id=#{userId}
+    </select>
 </mapper>

@@ -67,7 +67,7 @@
                             success:function(data) {
                                 if (data.success==true){
                                     console.log("登录成功!");
-                                    window.location.href="user/index";
+                                    window.location.href="login/index";
                                 }else{
                                     $("#password").val("");
                                    $(".errormsg").html("").html(data.errormsg);

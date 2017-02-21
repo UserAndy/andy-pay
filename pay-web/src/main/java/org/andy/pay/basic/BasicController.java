@@ -1,4 +1,4 @@
-package org.andy.pay.controller;
+package org.andy.pay.basic;
 
 /**
  * description: Controller 基类 用户基本信息的情况

@@ -1,6 +1,7 @@
 package org.andy.pay.controller;
 
 
+import org.andy.pay.basic.BasicController;
 import org.andy.pay.common.utils.ConvertMapUtils;
 import org.andy.pay.common.utils.OutputUtils;
 import org.springframework.stereotype.Controller;
@@ -9,7 +10,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.util.Map;
-import java.util.Set;
 
 /**
  * description: 支付宝controller类的基本情况
@@ -19,7 +19,7 @@ import java.util.Set;
  */
 @Controller
 @RequestMapping("alipay")
-public class AlipayController extends BasicController{
+public class AlipayController extends BasicController {
 
     /**
      * 通知方法

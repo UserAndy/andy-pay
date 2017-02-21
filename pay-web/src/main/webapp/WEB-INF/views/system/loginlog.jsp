@@ -28,10 +28,10 @@
 <body>
 <div id="wrapper">
     <!--nav 的基本信息-->
-    <jsp:include page="../user/nav_index.jsp"/>
+    <jsp:include page="../index/nav_index.jsp"/>
     <div id="page-wrapper" class="gray-bg dashbard-1">
         <!--顶部导航 start-->
-        <jsp:include page="../user/nav_top.jsp"/>
+        <jsp:include page="../index/nav_top.jsp"/>
         <!--顶部导航 end-->
         <!--nav start-->
         <div class="row wrapper border-bottom white-bg page-heading">
@@ -111,27 +111,27 @@
                                     </tr>
                                     </thead>
                                     <tbody>
-                                    <tr>
-                                        <td>2017-03-11 12:11:11</td>
-                                        <td>2017-03-11 12:11:12</td>
-                                        <td><span class="pie">127.0.0.1</span></td>
-                                        <td>微信登录</td>
-                                        <td>google chrome</td>
-                                        <td><a href="table_basic.html#"><i class="fa fa-check text-navy"></i></a>
-                                        </td>
-                                    </tr>
-
+                                    <c:forEach items="${list}" var="item">
+                                        <tr>
+                                            <td>2017-03-11 12:11:11</td>
+                                            <td>2017-03-11 12:11:12</td>
+                                            <td><span class="pie">127.0.0.1</span></td>
+                                            <td>微信登录</td>
+                                            <td>google chrome</td>
+                                            <td><a href="table_basic.html#"><i class="fa fa-check text-navy"></i></a>
+                                            </td>
+                                        </tr>
+                                    </c:forEach>
                                     </tbody>
                                 </table>
                             </div>
-
                         </div>
                     </div>
                 </div>
 
             </div>
         </div>
-        <jsp:include page="../user/nav_bottom.jsp"/>
+        <jsp:include page="../index/nav_bottom.jsp"/>
     </div>
 </div>
 
