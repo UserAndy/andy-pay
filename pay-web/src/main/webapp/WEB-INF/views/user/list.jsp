@@ -50,11 +50,8 @@
                     </li>
                 </ol>
             </div>
-            <div class="col-lg-2">
-
-            </div>
+            <div class="col-lg-2"></div>
         </div>
-        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="left" title="这里是提示内容">左侧提示</button>
         <div class="wrapper wrapper-content animated fadeInRight">
             <div class="row">
                 <div class="col-lg-12">
@@ -89,7 +86,9 @@
                                 <p>
                                     <button class="btn btn-primary" type="button"><i class="fa fa-search"></i>&nbsp;查询</button>
                                     <button class="btn btn-success" type="button"><i class="fa fa-save"></i>&nbsp;添加</button>
-                                    <button class="btn btn-info" type="button"><i class="fa fa-paste"></i> 编辑</button>
+                                    <button class="btn btn-info" type="button" id="result" onclick="getContent()"><i class="fa fa-paste"></i>编辑</button>
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal111" onclick="getContent();">1111</button>
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal222" onclick="getload();">load</button>
                                 </p>
                                 <!--button end-->
                             </div>
@@ -193,6 +192,10 @@
                 </div>
             </div>
         </div>
+        <!--模态框 start-->
+        <div class="modal inmodal fade" id="modal111" tabindex="-1" role="dialog"  aria-hidden="true"></div>
+        <div class="modal inmodal fade" id="modal222" tabindex="-1" role="dialog"  aria-hidden="true"></div>
+        <!--模态框 end-->
         <!--底部栏 start-->
         <jsp:include page="../index/nav_bottom.jsp"/>
         <!--底部栏 end-->
@@ -219,23 +222,31 @@
         var oTable = $('#editable').dataTable({
             ordering:false    //是否显示全局排序字段  false 表示不排序, true表示排序
         });
-
-        /* /!* Apply the jEditable handlers to the table *!/
-         oTable.$('td').editable('../example_ajax.php', {
-         "callback": function (sValue, y) {
-         var aPos = oTable.fnGetPosition(this);
-         oTable.fnUpdate(sValue, aPos[0], aPos[1]);
-         },
-         "submitdata": function (value, settings) {
-         return {
-         "row_id": this.parentNode.getAttribute('id'),
-         "column": oTable.fnGetPosition(this)[2]
-         };
-         },
-         "width": "90%",
-         "height": "100%"
-         });*/
     });
+    /**
+     * 模态框  加载信息 (方法一)
+     */
+    /*function getContent(){
+        $.ajax({
+            type : "get",
+            url : "http://localhost:8080/pay-web/user/userDetail",
+            timeout:1000,
+            success:function(datas){
+                $('#modal111').html("").append(datas);
+            },
+        });
+    }*/
+    /**
+     * 模态框  加载信息 (方法二)
+     */
+    function getload(){
+        $("#modal222").load("http://localhost:8080/pay-web/user/userDetail");
+    }
+
+
+    //
+
+
 </script>
 </body>
 </html>

@@ -57,6 +57,7 @@
                 <a href="javascript:void(0);"><i class="fa fa-gears"></i> <span class="nav-label">系统信息</span><span class="fa arrow"></span></a>
                 <ul class="nav nav-second-level">
                     <li><a href="<%=basePath%>system/alllogs"><i class="fa fa-history"></i>登录日志</a></li>
+                    <li><a href="<%=basePath%>test/test"><i class="fa fa-history"></i>测试button</a></li>
                 </ul>
             </li>
         </ul>

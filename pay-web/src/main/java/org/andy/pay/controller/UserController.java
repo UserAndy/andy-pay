@@ -42,6 +42,42 @@ public class UserController extends BasicController{
         return modelAndView;
     }
 
+    /**
+     * 用户详细信息
+     * @param request   user/userDetail
+     * @return
+     */
+    @RequestMapping(value ="userDetail",method = {RequestMethod.GET})
+    public ModelAndView userDetail(HttpServletRequest request){
+        ModelAndView modelAndView = new ModelAndView();
+        modelAndView.setViewName("/user/userDetails");
+        return modelAndView;
+    }
+
+    /**
+     * 用户详细信息
+     * @param request   user/test
+     * @return
+     */
+    @RequestMapping(value ="test",method = {RequestMethod.GET})
+    public ModelAndView test(HttpServletRequest request){
+        ModelAndView modelAndView = new ModelAndView();
+        modelAndView.setViewName("/user/test");
+        return modelAndView;
+    }
+
+    /**
+     * 测试用户的基本哦
+     * @param request http://localhost:8080/pay-web/test/test
+     * @return
+     */
+    @RequestMapping(value ="test",method = {RequestMethod.GET})
+    public ModelAndView testTest(HttpServletRequest request){
+        ModelAndView modelAndView = new ModelAndView();
+        modelAndView.setViewName("/user/test");
+        return modelAndView;
+    }
+
 
     /**
      * 添加用户
