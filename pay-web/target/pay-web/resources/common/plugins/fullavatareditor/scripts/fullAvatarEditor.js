@@ -1,6 +1,6 @@
 function fullAvatarEditor() {
 	var id				= 'fullAvatarEditor'			//flash文件的ID
-	var file			= 'resources/common/plugins/fullavatareditor/fullAvatarEditor.swf';		//flash文件的路径
+	var file			= 'plugins/fullavatareditor/fullAvatarEditor.swf';		//flash文件的路径
 	var	version			= "10.1.0";						//播放该flash所需的最低版本
 	var	expressInstall	= 'expressInstall.swf';			//expressInstall.swf的路径
 	var	width			= 600;							//flash文件的宽度
@@ -74,14 +74,14 @@ function fullAvatarEditor() {
 		};
 	};
 	swfobject.embedSWF(
-		file, 
+		file,
 		container,
 		width,
 		height,
 		version,
 		expressInstall,
 		vars,
-		params, 
+		params,
 		attributes,
 		callbackFn
 	);
