@@ -1,29 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="org.andy.pay.mapper.RoleMapper">
-    <resultMap id="UserInfoResult" type="Role">
-        <id property="id" column="id" jdbcType="VARCHAR"/>
-        <result property="role_name" column="role_name" jdbcType="VARCHAR"/>
-        <result property="role_description" column="role_description" jdbcType="VARCHAR"/>
+    <resultMap id="RoleResult" type="Role">
+        <id property="id" column="id" jdbcType="VARCHAR" />
+        <result property="name" column="name" jdbcType="VARCHAR"/>
+        <result property="code" column="code" jdbcType="VARCHAR"/>
+        <result property="description" column="description" jdbcType="VARCHAR"/>
         <result property="create_time" column="create_time" jdbcType="TIMESTAMP"/>
         <result property="create_user" column="create_user" jdbcType="VARCHAR"/>
-        <result property="lastmodify_time" column="lastmodify_time" jdbcType="TIMESTAMP"/>
-        <result property="lastmodify_user" column="lastmodify_user" jdbcType="VARCHAR"/>
-        <result property="status" column="status" jdbcType="INTEGER"/>
+        <result property="update_time" column="update_time" jdbcType="TIMESTAMP"/>
+        <result property="update_user" column="update_user" jdbcType="VARCHAR"/>
         <result property="is_use" column="is_use" jdbcType="INTEGER"/>
     </resultMap>
+    <sql id="connSql">
+        select id,name,code,description,create_time,create_user,update_time,update_user,is_use from tbl_system_role
+    </sql>
     <insert id="addRole" parameterType="Role">
-       insert into tbl_role(id,role_name,role_descritpion,create_time,create_user,status,is_use)
-       values(#{id},#{role_name},#{role_descritpion},#{create_time},#{create_user},#{status},#{is_use});
+        insert into tbl_system_role(id,name,code,description,create_time,create_user,is_use)
+        values(#{id},#{name},#{code},#{description},#{create_time},#{create_user},#{is_use});
     </insert>
-    <update id="remoreRole" parameterType="Role">
-       update tbl_role set is_use =0,lastmodify_time=#{lastmodify_time},lastmodify_user=#{lastmodify_user} where id = #{id};
+    <update id="deleteRole" parameterType="Role">
+        update tbl_system_role set is_use=1,update_time=#{update_time},update_user=#{update_user} where id=#{id}
     </update>
-    <insert id="correlationPermissions" parameterType="RolePermission">
-      insert into tbl_role_permission(id,role_id,permission_id,create_time,create_user,status)values(#{id},#{role_id},#{permission_id},#{create_time},#{create_user},#{status});
-    </insert>
-    <update id="uncorrelationPermissions" parameterType="RolePermission">
-        update tbl_role_permission set is_use=0,lastmodify_time =#{lastmodify_time},lastmodify_user=#{lastmodify_user} where id = #{id};
+    <update id="modifyRole" parameterType="Role">
+          update tbl_system_role set name=#{name},code=#{code},description=#{description},update_time=#{update_time},update_user=#{update_user}
+        where id=#{id}
     </update>
+    <select id="getRoleById" resultMap="RoleResult">
+      <include refid="connSql"/>where is_use=0 and id=#{id}
+    </select>
 </mapper>
-

@@ -1,6 +1,6 @@
 package org.andy.pay.service.impl;
 
-import org.andy.pay.mapper.LoginLogMapper;
+import org.andy.pay.mapper.LoginLogsMapper;
 import org.andy.pay.model.LoginLog;
 import org.andy.pay.service.LogService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,18 +18,18 @@ import java.util.List;
 public class LogServiceImpl implements LogService{
 
     @Autowired
-    private LoginLogMapper loginLogMapper;
+    private LoginLogsMapper loginLogsMapper;
 
     public boolean addLog(LoginLog info) {
-        return loginLogMapper.addLog(info);
+        return loginLogsMapper.addLog(info);
     }
 
     public boolean removeLog(String id) {
 
-        return loginLogMapper.modifyLogStatus(id,0);
+        return loginLogsMapper.modifyLogStatus(id,0);
     }
 
     public List<LoginLog> getUserLog(String userId) {
-        return loginLogMapper.getUserLog(userId);
+        return loginLogsMapper.getUserLog(userId);
     }
 }

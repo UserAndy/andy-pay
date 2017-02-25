@@ -1,6 +1,7 @@
 package org.andy.pay.mapper;
 
-import org.andy.pay.model.LoginLog;
+
+import org.andy.pay.model.LoginLogs;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 
@@ -12,28 +13,20 @@ import java.util.List;
  * Created by 2016/11/12 15:06
  */
 @Repository
-public interface LoginLogMapper {
+public interface LoginLogsMapper {
 
     /**
      * 新增log
      * @param info;
      * @return
      */
-    boolean addLog(LoginLog info);
+    boolean addLog(LoginLogs info);
 
-
-    /**
-     * 修改日志状态
-     * @param id
-     * @param is_use  1 正在使用　　　0 表示逻辑已删除
-     * @return
-     */
-    boolean modifyLogStatus(String id,int is_use);
 
     /**
      * 获取用户日志log
      * @param userId
      * @return
      */
-    List<LoginLog> getUserLog(@Param("userId")String userId);
+    List<LoginLogs> getUserLog(@Param("userId")String userId);
 }

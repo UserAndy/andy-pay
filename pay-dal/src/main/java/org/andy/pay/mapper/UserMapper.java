@@ -1,81 +1,99 @@
 package org.andy.pay.mapper;
 
-import org.andy.pay.model.User;;
-import org.andy.pay.model.UserRole;
+import org.andy.pay.model.User;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 
-import java.util.List;
-import java.util.Set;
-
+import java.util.Date;
 /**
- * 系统用户mapper
- * Created by andy on 16-11-30.
+ * @description:  用户操作类
+ * @author: Andy
+ * @date: 2017-02-25
+ * @blog: www.andyqian.com
  */
 @Repository
 public interface UserMapper {
 
     /**
-     * 添加用户
+     * 添加用户的基本信息
+     * @param user  待添加的用户信息
+     * @return
+     */
+    public boolean addBasicUser(User user);
+
+    /**
+     * 删除用户 (逻辑删除)
+     * @param userId
+     * @return
+     */
+    public boolean deleteUser(@Param("userId") String userId, @Param("handler_time") Date handler_time,@Param("handler_user") String handler_user);
+
+    /**
+     * 冻结用户
+     * @param userId            用户id
+     * @param handlerUser       处理用户
+     * @param handlerTime       处理时间
+     * @return
+     */
+    public boolean freezeUser(@Param("userId") String userId,@Param("handlerUser")String handlerUser,@Param("handlerTime") Date handlerTime);
+
+    /**
+     * 解除冻结用户
+     * @param userId    用户id
+     * @param handlerUser  处理的用户
+     * @param handlerTime   处理时间
+     * @return
+     */
+    public boolean unfreezeUser(@Param("userId") String userId,@Param("handlerUser") String handlerUser,@Param("handlerTime") Date handlerTime);
+
+    /**
+     * 修改用户的基本信息
      * @param user
      * @return
      */
-    boolean addUser(User user);
+    public boolean modifyBasicUser(User user);
+
 
     /**
-     * 修改用户信息
-     * @param user
+     * 通过用户id 来查找用户
+     * @param userId
      * @return
      */
-    boolean modifyUser(User user);
+    public User getUserById(String userId);
 
     /**
-     * 删除用户(修改标识,不做逻辑删除)
-     * @param userid
+     * 通过名称来查找用户
+     * @param loginName
      * @return
      */
-    boolean deleteUser(@Param("userid") String userid);
+    public User getUserByLoginName(String loginName);
 
     /**
-     * 获取用户信息
-     * @param username　用户名
+     * 通过手机号码来查找用户信息
+     * @param telephone
      * @return
      */
-    User getUesrInfo(String username);
+    public User getUserByTelephone(String telephone);
+
+    /**
+     * 根据邮箱来查找用户
+     * @param email
+     * @return
+     */
+    public User getUserByEmail(String email);
+
 
     /**
      * 修改密码
-     * @param userId
-     * @param newPassword
+     * @param user
+     * @return
      */
-     void changePassword(@Param("userId") String userId, @Param("password") String newPassword);
+    public boolean modifyPassword(User user);
 
     /**
-     * 添加用户与角色的关系
-     * @param userRole
+     * 用户登录
+     * @param username
+     * @return
      */
-     void correlationRoles(UserRole userRole);
-
-    /**
-     * 移除用户与角色的关系
-     * @param userRole
-     */
-     void uncorrelationRoles(UserRole userRole);
-
-
-    /**
-     * 根据用户名查找用户的角色
-     * @param userId
-     * @return 返回的为角色名
-     */
-     Set<String> findRoleByUserId(String userId);
-
-
-    /**
-     * 根据用户名查找用户的权限
-     * @param userId 　
-     * @return 返回的为权限名
-     */
-    Set<String> findPermissionByUserId(String userId);
-
+    public User login(String username);
 }

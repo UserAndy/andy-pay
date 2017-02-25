@@ -1,31 +1,53 @@
 package org.andy.pay.model;
 
-import java.util.Date;
-
+import  java.util.Date;
 /**
- * @version 1.0
- * @author andy
- * @description: 用户角色表,用于权限管理
- * @email andytohome@gmail.com
+ * @description:
+ * @author: Andy
+ * @date: 2017-02-25
+ * @blog: www.andyqian.com
  */
 public class RolePermission implements java.io.Serializable{
+
     private String id;
-    //角色id
+
+    /**
+     * 角色id
+     */
     private String role_id;
-    //权限id
+
+    /**
+     * 权限id
+     */
     private String permission_id;
-    //创建时间
+
+    /**
+     * 创建时间
+     */
     private Date create_time;
-    //创建人
-    private String create_user;
-    //最后修改时间
-    private Date lastmodify_time;
-    //修改人
-    private String lastmodify_user;
-    //状态
-    private int status;
-    //是否逻辑删除 0表示逻辑已删除　　1表示正在使用
+
+    /**
+     * 创建人
+     */
+    private String create_person;
+
+    /**
+     * 修改时间
+     */
+    private Date update_time;
+
+    /**
+     * 修改人
+     */
+    private String update_person;
+
+    /**
+     * 逻辑删除标识 1 表示正常数据  0 表示逻辑已删除数据
+     */
     private int is_use;
+
+    public RolePermission() {
+    }
 
     public String getId() {
         return id;
@@ -59,36 +81,28 @@ public class RolePermission implements java.io.Serializable{
         this.create_time = create_time;
     }
 
-    public String getCreate_user() {
-        return create_user;
+    public String getCreate_person() {
+        return create_person;
     }
 
-    public void setCreate_user(String create_user) {
-        this.create_user = create_user;
+    public void setCreate_person(String create_person) {
+        this.create_person = create_person;
     }
 
-    public Date getLastmodify_time() {
-        return lastmodify_time;
+    public Date getUpdate_time() {
+        return update_time;
     }
 
-    public void setLastmodify_time(Date lastmodify_time) {
-        this.lastmodify_time = lastmodify_time;
+    public void setUpdate_time(Date update_time) {
+        this.update_time = update_time;
     }
 
-    public String getLastmodify_user() {
-        return lastmodify_user;
+    public String getUpdate_person() {
+        return update_person;
     }
 
-    public void setLastmodify_user(String lastmodify_user) {
-        this.lastmodify_user = lastmodify_user;
-    }
-
-    public int getStatus() {
-        return status;
-    }
-
-    public void setStatus(int status) {
-        this.status = status;
+    public void setUpdate_person(String update_person) {
+        this.update_person = update_person;
     }
 
     public int getIs_use() {

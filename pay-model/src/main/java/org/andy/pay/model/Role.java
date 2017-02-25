@@ -1,35 +1,58 @@
 package org.andy.pay.model;
 
-import org.andy.pay.enums.IsUse;
-
-import java.util.Date;
-
+import  java.util.Date;
 /**
- * @version 1.0
- * @author andy
- * @description: 用户角色表,用于权限管理
- * @email andytohome@gmai.com
+ * @description: 角色表
+ * @author: Andy
+ * @date: 2017-02-23
+ * @blog: www.andyqian.com
  */
 public class Role implements java.io.Serializable{
 
     private String id;
-    //权限名称
-    private String role_name;
-    //权限描述
-    private String role_description;
-    //创建时间
-    private Date create_time;
-    //创建人
-    private String create_user;
-    //最后修改时间
-    private Date lastmodify_time;
-    //最后修改人
-    private String lastmodify_user;
-    //状态
-    private int status;
-    //是否使用　0　表示未使用　　1表示已使用    默认设置为使用状态
-    private int is_use = IsUse.USE.getStatus();
 
+    /**
+     * 名称
+     */
+    private String name;
+
+    /**
+     * 权限代码
+     */
+    private String code;
+
+    /**
+     * 权限描述
+     */
+    private String description;
+
+    /**
+     * 创建时间
+     */
+    private Date create_time;
+
+    /**
+     * 创建人
+     */
+    private String create_user;
+
+    /**
+     * 修改时间
+     */
+    private Date update_time;
+
+    /**
+     * 修改人
+     */
+    private String update_user;
+
+    /**
+     * 0 表示正常数据  1 表示逻辑已删除数据
+     */
+    private int is_use;
+
+    public Role() {
+    }
 
     public String getId() {
         return id;
@@ -39,20 +62,28 @@ public class Role implements java.io.Serializable{
         this.id = id;
     }
 
-    public String getRole_name() {
-        return role_name;
+    public String getName() {
+        return name;
     }
 
-    public void setRole_name(String role_name) {
-        this.role_name = role_name;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public String getRole_description() {
-        return role_description;
+    public String getCode() {
+        return code;
     }
 
-    public void setRole_description(String role_description) {
-        this.role_description = role_description;
+    public void setCode(String code) {
+        this.code = code;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
     }
 
     public Date getCreate_time() {
@@ -71,28 +102,20 @@ public class Role implements java.io.Serializable{
         this.create_user = create_user;
     }
 
-    public Date getLastmodify_time() {
-        return lastmodify_time;
+    public Date getUpdate_time() {
+        return update_time;
     }
 
-    public void setLastmodify_time(Date lastmodify_time) {
-        this.lastmodify_time = lastmodify_time;
+    public void setUpdate_time(Date update_time) {
+        this.update_time = update_time;
     }
 
-    public String getLastmodify_user() {
-        return lastmodify_user;
+    public String getUpdate_user() {
+        return update_user;
     }
 
-    public void setLastmodify_user(String lastmodify_user) {
-        this.lastmodify_user = lastmodify_user;
-    }
-
-    public int getStatus() {
-        return status;
-    }
-
-    public void setStatus(int status) {
-        this.status = status;
+    public void setUpdate_user(String update_user) {
+        this.update_user = update_user;
     }
 
     public int getIs_use() {

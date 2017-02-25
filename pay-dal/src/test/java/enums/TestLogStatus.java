@@ -1,6 +1,5 @@
 package enums;
 
-import org.andy.pay.enums.LoginType;
 import org.junit.Test;
 
 /**

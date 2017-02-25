@@ -1,31 +1,50 @@
 package org.andy.pay.model;
 
-import java.util.Date;
+import  java.util.Date;
 
 /**
- * @version 1.0
- * @author andy
- * @description: 用户角色表,用于权限管理
- * @email andytohome@gmai.com
+ * @description: 用户角色关联表
+ * @author: Andy
+ * @date: 2017-02-23
+ * @blog: www.andyqian.com
  */
 public class UserRole implements java.io.Serializable{
 
     private String id;
-    //用户id
+
+    /**
+     * 用户id
+     */
     private String user_id;
-    //角色id
+
+    /**
+     * 角色id
+     */
     private String role_id;
-    //创建时间
+
+    /**
+     * 创建时间
+     */
     private Date create_time;
-    //创建用户
-    private String create_user;
-    //最后修改用户
-    private String lastmodify_user;
-    //最后修改时间
-    private Date lastmodify_time;
-    //状态
-    private int status;
-    //是否删除 0表示逻辑已删除　1表示正在使用
+
+    /**
+     * 创建人
+     */
+    private String create_person;
+
+    /**
+     * 修改时间
+     */
+    private Date update_time;
+
+    /**
+     * 修改人
+     */
+    private String update_person;
+
+    /**
+     * 逻辑删除标识  0 表示删除  1 表示正常数据
+     */
     private int is_use;
 
     public UserRole() {
@@ -63,36 +82,28 @@ public class UserRole implements java.io.Serializable{
         this.create_time = create_time;
     }
 
-    public String getCreate_user() {
-        return create_user;
+    public String getCreate_person() {
+        return create_person;
     }
 
-    public void setCreate_user(String create_user) {
-        this.create_user = create_user;
+    public void setCreate_person(String create_person) {
+        this.create_person = create_person;
     }
 
-    public String getLastmodify_user() {
-        return lastmodify_user;
+    public Date getUpdate_time() {
+        return update_time;
     }
 
-    public void setLastmodify_user(String lastmodify_user) {
-        this.lastmodify_user = lastmodify_user;
+    public void setUpdate_time(Date update_time) {
+        this.update_time = update_time;
     }
 
-    public Date getLastmodify_time() {
-        return lastmodify_time;
+    public String getUpdate_person() {
+        return update_person;
     }
 
-    public void setLastmodify_time(Date lastmodify_time) {
-        this.lastmodify_time = lastmodify_time;
-    }
-
-    public int getStatus() {
-        return status;
-    }
-
-    public void setStatus(int status) {
-        this.status = status;
+    public void setUpdate_person(String update_person) {
+        this.update_person = update_person;
     }
 
     public int getIs_use() {

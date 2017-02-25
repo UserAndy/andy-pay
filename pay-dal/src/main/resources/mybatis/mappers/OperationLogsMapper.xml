@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.andy.pay.mapper.OperationLogsMapper">
+    <resultMap id="operationLogsResult" type="OperationLogs">
+        <id property="id" column="id" jdbcType="VARCHAR" />
+        <result property="operationName" column="operationName" jdbcType="VARCHAR"/>
+        <result property="moudle" column="moudle" jdbcType="VARCHAR"/>
+        <result property="user_id" column="user_id" jdbcType="VARCHAR"/>
+        <result property="start_time" column="start_time" jdbcType="TIMESTAMP"/>
+        <result property="end_time" column="end_time" jdbcType="TIMESTAMP"/>
+        <result property="consume_time" column="consume_time" jdbcType="INTEGER"/>
+        <result property="method" column="method" jdbcType="VARCHAR"/>
+        <result property="create_time" column="create_time" jdbcType="TIMESTAMP"/>
+        <result property="description" column="description" jdbcType="VARCHAR"/>
+        <result property="ip" column="ip" jdbcType="VARCHAR"/>
+        <result property="host" column="host" jdbcType="VARCHAR"/>
+        <result property="requestPath" column="requestPath" jdbcType="VARCHAR"/>
+        <result property="referer" column="referer" jdbcType="VARCHAR"/>
+        <result property="connection" column="connection" jdbcType="VARCHAR"/>
+        <result property="fail_description" column="fail_description" jdbcType="VARCHAR"/>
+        <result property="user_agent" column="user_agent" jdbcType="VARCHAR"/>
+        <result property="view_time" column="view_time" jdbcType="INTEGER"/>
+        <result property="action_time" column="action_time" jdbcType="INTEGER"/>
+        <result property="is_use" column="is_use" jdbcType="INTEGER"/>
+    </resultMap>
+    <sql id="connSql">
+        select id,operationName,moudle,user_id,start_time,end_time,consume_time,create_time,method,description,ip,host,requestPath,referer,connection,
+        fail_description,user_agent,view_time,action_time,is_use  from tbl_operation_logs
+    </sql>
+    <insert id="addOperationLog" parameterType="addOperationLog">
+        insert into tbl_operation_logs(id,operationName,moudle,user_id,start_time,end_time,
+        consume_time,create_time,method,description,ip,host,requestPath,referer,connection,
+        fail_description,user_agent,view_time,action_time,is_use)
+        values(#{id},#{operationName},#{moudle},#{user_id},#{start_time},#{end_time},#{consume_time},#{create_time},#{method},
+        #{description},#{ip},#{host},#{requestPath},#{referer},#{connection},#{fail_description},#{user_agent},
+        #{view_time},#{action_time},#{is_use});
+    </insert>
+    <select id="connSql" resultMap="operationLogsResult">
+        <include refid="connSql"/> where user_id=#{userId} and is_use=1
+    </select>
+</mapper>

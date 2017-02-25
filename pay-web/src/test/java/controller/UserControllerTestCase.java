@@ -1,6 +1,6 @@
 package controller;
 
-import org.andy.pay.mapper.LoginLogMapper;
+import org.andy.pay.mapper.LoginLogsMapper;
 import org.andy.pay.model.LoginLog;
 import org.junit.Assert;
 import org.junit.Test;
@@ -17,14 +17,14 @@ import java.util.List;
 public class UserControllerTestCase extends AbstractTestCase{
 
     @Autowired
-    private LoginLogMapper loginLogMapper;
+    private LoginLogsMapper loginLogsMapper;
 
     /**
      * 测试用户信息
      */
     @Test
     public void test(){
-        List<LoginLog> list =  loginLogMapper.getUserLog("1");
+        List<LoginLog> list =  loginLogsMapper.getUserLog("1");
         Assert.assertNotNull(list);
     }
 }

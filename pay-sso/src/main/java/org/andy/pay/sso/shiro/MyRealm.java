@@ -1,7 +1,6 @@
 package org.andy.pay.sso.shiro;
 
 import org.andy.pay.model.User;
-import org.andy.pay.service.UserInfoService;
 import org.andy.pay.service.impl.UserInfoServiceImpl;
 import org.apache.log4j.Logger;
 import org.apache.shiro.authc.*;
@@ -10,8 +9,6 @@ import org.apache.shiro.realm.AuthorizingRealm;
 import org.apache.shiro.subject.PrincipalCollection;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-
-import javax.servlet.http.HttpServletRequest;
 
 /**
  * 在这里处理

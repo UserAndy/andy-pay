@@ -1,63 +1,196 @@
 package org.andy.pay.model;
 
-import java.util.Date;
-
+import  java.util.Date;
 /**
- * description:
- *
- * @author: andy
- * Created by 2016/11/12 15:03
+ * @description:  用户表
+ * @author: Andy
+ * @date: 2017-02-23
+ * @blog: www.andyqian.com
  */
 public class User implements java.io.Serializable{
-    //主键
+
     private String id;
-    //修改日期
-    private Date modifyDate;
-    //用户名
+
+    /**
+     * 姓名
+     */
     private String username;
-    //密码(md5单向加密)
+
+    /**
+     * 登录名(唯一)
+     */
+    private String login_name;
+
+    /**
+     * (真实名字)不唯一
+     */
+    private String real_name;
+
+    /**
+     * 婚姻状态 1未婚    2 已婚  3 保密 0 未知
+     */
+    private int marita_status;
+
+    /**
+     * 教育状况
+     */
+    private int education_situation;
+
+    /**
+     * 密码
+     */
     private String password;
-    //联系电话
-    private String telephone;
-    //邮箱
-    private String email;
-    //头像地址
-    private String headurl;
-    //详细地址
-    private String address;
-    //省
-    private String province;
-    //城市
-    private String city;
-    //国家
-    private String country;
-    //注册时间
-    private Date register_time;
-    //注册ip
-    private String register_ip;
-    //最后登陆时间
-    private Date lastlogin_time;
-    //最后登录ip
-    private String lastlogin_ip;
-    //状态　0　未使用 1　使用中　　默认为１
-    private int is_use;
-    //盐
+
+    /**
+     * 盐
+     */
     private String salt;
 
     /**
-     * //是否锁定　true　表示已锁定　false　表示未锁定
-     * Boolean.TRUE.equals(info.is_locked()) 表示锁定
-     * Boolean.FALSE.equals() 表示未锁定
+     * 邮箱
      */
-    private boolean is_locked;
+    private String email;
 
-    public String getSalt() {
-        return salt;
-    }
+    /**
+     * 联系电话
+     */
+    private String telephone;
 
-    public void setSalt(String salt) {
-        this.salt = salt;
-    }
+    /**
+     * 邮编
+     */
+    private String zipcode;
+
+    /**
+     * 手机号码
+     */
+    private String mobile;
+
+    /**
+     * 1 男  2 女  3 未知
+     */
+    private int sex;
+
+    /**
+     * 总余额
+     */
+    private String sum_balance;
+
+    /**
+     * 总积分
+     */
+    private int sum_integrate;
+
+    /**
+     * 当前余额
+     */
+    private String current_balance;
+
+    /**
+     * 当前积分
+     */
+    private int current_integrate;
+
+    /**
+     * 证件类型
+     */
+    private String id_type;
+
+    /**
+     * 证件号码
+     */
+    private String id_number;
+
+    /**
+     * 等级
+     */
+    private int grade;
+
+    /**
+     * 备注
+     */
+    private String remark;
+
+    /**
+     * 描述
+     */
+    private String description;
+
+    /**
+     * 头像
+     */
+    private String headurl;
+
+    /**
+     *
+     */
+    private Date brithday;
+
+    /**
+     * 来源 1 代表pc  2 移动端
+     */
+    private int source;
+
+    /**
+     * 省
+     */
+    private String province;
+
+    /**
+     * 市
+     */
+    private String city;
+
+    /**
+     * 区
+     */
+    private String district;
+
+    /**
+     * 详细地址
+     */
+    private String address;
+
+
+    /**
+     * 注册ip
+     */
+    private String register_ip;
+
+    /**
+     * 注册时间
+     */
+    private Date register_time;
+
+    /**
+     * 注册人
+     */
+    private String register_person;
+
+    /**
+     * 修改人
+     */
+    private String modify_person;
+
+    /**
+     * 修改时间
+     */
+    private Date modify_time;
+
+    /**
+     * 修改ip地址
+     */
+    private String modify_ip;
+
+    /**
+     * 1 正常使用   0 表示已冻结
+     */
+    private int is_freeze;
+
+    /**
+     * 1 正常使用   0 表示已冻结
+     */
+    private int is_use;
 
     public User() {
     }
@@ -70,20 +203,44 @@ public class User implements java.io.Serializable{
         this.id = id;
     }
 
-    public Date getModifyDate() {
-        return modifyDate;
-    }
-
-    public void setModifyDate(Date modifyDate) {
-        this.modifyDate = modifyDate;
-    }
-
     public String getUsername() {
         return username;
     }
 
     public void setUsername(String username) {
         this.username = username;
+    }
+
+    public String getLogin_name() {
+        return login_name;
+    }
+
+    public void setLogin_name(String login_name) {
+        this.login_name = login_name;
+    }
+
+    public String getReal_name() {
+        return real_name;
+    }
+
+    public void setReal_name(String real_name) {
+        this.real_name = real_name;
+    }
+
+    public int getMarita_status() {
+        return marita_status;
+    }
+
+    public void setMarita_status(int marita_status) {
+        this.marita_status = marita_status;
+    }
+
+    public int getEducation_situation() {
+        return education_situation;
+    }
+
+    public void setEducation_situation(int education_situation) {
+        this.education_situation = education_situation;
     }
 
     public String getPassword() {
@@ -94,12 +251,12 @@ public class User implements java.io.Serializable{
         this.password = password;
     }
 
-    public String getTelephone() {
-        return telephone;
+    public String getSalt() {
+        return salt;
     }
 
-    public void setTelephone(String telephone) {
-        this.telephone = telephone;
+    public void setSalt(String salt) {
+        this.salt = salt;
     }
 
     public String getEmail() {
@@ -110,6 +267,110 @@ public class User implements java.io.Serializable{
         this.email = email;
     }
 
+    public String getTelephone() {
+        return telephone;
+    }
+
+    public void setTelephone(String telephone) {
+        this.telephone = telephone;
+    }
+
+    public String getZipcode() {
+        return zipcode;
+    }
+
+    public void setZipcode(String zipcode) {
+        this.zipcode = zipcode;
+    }
+
+    public String getMobile() {
+        return mobile;
+    }
+
+    public void setMobile(String mobile) {
+        this.mobile = mobile;
+    }
+
+    public int getSex() {
+        return sex;
+    }
+
+    public void setSex(int sex) {
+        this.sex = sex;
+    }
+
+    public String getSum_balance() {
+        return sum_balance;
+    }
+
+    public void setSum_balance(String sum_balance) {
+        this.sum_balance = sum_balance;
+    }
+
+    public int getSum_integrate() {
+        return sum_integrate;
+    }
+
+    public void setSum_integrate(int sum_integrate) {
+        this.sum_integrate = sum_integrate;
+    }
+
+    public String getCurrent_balance() {
+        return current_balance;
+    }
+
+    public void setCurrent_balance(String current_balance) {
+        this.current_balance = current_balance;
+    }
+
+    public int getCurrent_integrate() {
+        return current_integrate;
+    }
+
+    public void setCurrent_integrate(int current_integrate) {
+        this.current_integrate = current_integrate;
+    }
+
+    public String getId_type() {
+        return id_type;
+    }
+
+    public void setId_type(String id_type) {
+        this.id_type = id_type;
+    }
+
+    public String getId_number() {
+        return id_number;
+    }
+
+    public void setId_number(String id_number) {
+        this.id_number = id_number;
+    }
+
+    public int getGrade() {
+        return grade;
+    }
+
+    public void setGrade(int grade) {
+        this.grade = grade;
+    }
+
+    public String getRemark() {
+        return remark;
+    }
+
+    public void setRemark(String remark) {
+        this.remark = remark;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
     public String getHeadurl() {
         return headurl;
     }
@@ -118,12 +379,20 @@ public class User implements java.io.Serializable{
         this.headurl = headurl;
     }
 
-    public String getAddress() {
-        return address;
+    public Date getBrithday() {
+        return brithday;
     }
 
-    public void setAddress(String address) {
-        this.address = address;
+    public void setBrithday(Date brithday) {
+        this.brithday = brithday;
+    }
+
+    public int getSource() {
+        return source;
+    }
+
+    public void setSource(int source) {
+        this.source = source;
     }
 
     public String getProvince() {
@@ -142,20 +411,20 @@ public class User implements java.io.Serializable{
         this.city = city;
     }
 
-    public String getCountry() {
-        return country;
+    public String getDistrict() {
+        return district;
     }
 
-    public void setCountry(String country) {
-        this.country = country;
+    public void setDistrict(String district) {
+        this.district = district;
     }
 
-    public Date getRegister_time() {
-        return register_time;
+    public String getAddress() {
+        return address;
     }
 
-    public void setRegister_time(Date register_time) {
-        this.register_time = register_time;
+    public void setAddress(String address) {
+        this.address = address;
     }
 
     public String getRegister_ip() {
@@ -166,20 +435,52 @@ public class User implements java.io.Serializable{
         this.register_ip = register_ip;
     }
 
-    public Date getLastlogin_time() {
-        return lastlogin_time;
+    public Date getRegister_time() {
+        return register_time;
     }
 
-    public void setLastlogin_time(Date lastlogin_time) {
-        this.lastlogin_time = lastlogin_time;
+    public void setRegister_time(Date register_time) {
+        this.register_time = register_time;
     }
 
-    public String getLastlogin_ip() {
-        return lastlogin_ip;
+    public String getRegister_person() {
+        return register_person;
     }
 
-    public void setLastlogin_ip(String lastlogin_ip) {
-        this.lastlogin_ip = lastlogin_ip;
+    public void setRegister_person(String register_person) {
+        this.register_person = register_person;
+    }
+
+    public String getModify_person() {
+        return modify_person;
+    }
+
+    public void setModify_person(String modify_person) {
+        this.modify_person = modify_person;
+    }
+
+    public Date getModify_time() {
+        return modify_time;
+    }
+
+    public void setModify_time(Date modify_time) {
+        this.modify_time = modify_time;
+    }
+
+    public String getModify_ip() {
+        return modify_ip;
+    }
+
+    public void setModify_ip(String modify_ip) {
+        this.modify_ip = modify_ip;
+    }
+
+    public int getIs_freeze() {
+        return is_freeze;
+    }
+
+    public void setIs_freeze(int is_freeze) {
+        this.is_freeze = is_freeze;
     }
 
     public int getIs_use() {
@@ -188,13 +489,5 @@ public class User implements java.io.Serializable{
 
     public void setIs_use(int is_use) {
         this.is_use = is_use;
-    }
-
-    public boolean is_locked() {
-        return is_locked;
-    }
-
-    public void setIs_locked(boolean is_locked) {
-        this.is_locked = is_locked;
     }
 }

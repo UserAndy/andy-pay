@@ -1,11 +1,13 @@
 package org.andy.pay.mapper;
 
 import org.andy.pay.model.Role;
-import org.andy.pay.model.RolePermission;
 import org.springframework.stereotype.Repository;
 
 /**
- * Created by andy on 16-12-19.
+ * @description: 角色表
+ * @author: Andy
+ * @date: 2017-02-25
+ * @blog: www.andyqian.com
  */
 @Repository
 public interface RoleMapper {
@@ -18,24 +20,24 @@ public interface RoleMapper {
     public boolean addRole(Role role);
 
     /**
-     * 移除角色
+     * 删除角色
      * @param role
      * @return
      */
-    public boolean remoreRole(Role role);
+    public boolean deleteRole(Role role);
+
+    /**
+     * 修改角色
+     * @param role
+     * @return
+     */
+    public boolean modifyRole(Role role);
 
 
     /**
-     * 添加角色与权限之间的关系
-     * @param rolePermission
+     * 通过id 获取Role
+     * @param id
      * @return
      */
-    public boolean correlationPermissions(RolePermission rolePermission);
-
-    /**
-     * 移除角色与权限的关系
-     * @param rolePermission
-     * @return
-     */
-    public boolean uncorrelationPermissions(RolePermission rolePermission);
+    public Role getRoleById(String id);
 }
