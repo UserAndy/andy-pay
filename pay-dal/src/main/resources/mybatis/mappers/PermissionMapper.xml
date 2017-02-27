@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.andy.pay.mapper.PermissionMapper">
+    <resultMap id="PermissionResult" type="Permission">
+        <id property="id" column="id" jdbcType="VARCHAR" />
+        <result property="name" column="name" jdbcType="VARCHAR"/>
+        <result property="description" column="description" jdbcType="VARCHAR"/>
+        <result property="remark" column="remark" jdbcType="VARCHAR"/>
+        <result property="create_time" column="create_time" jdbcType="TIMESTAMP"/>
+        <result property="create_person" column="create_person" jdbcType="VARCHAR"/>
+        <result property="update_time" column="update_time" jdbcType="TIMESTAMP"/>
+        <result property="update_person" column="update_person" jdbcType="VARCHAR"/>
+        <result property="is_use" column="is_use" jdbcType="INTEGER"/>
+    </resultMap>
+    <sql id="commSql">
+        select id,name,description,remark,create_person,create_time,update_time,update_person,is_use
+        from tbl_system_permission where is_use=0
+    </sql>
+    <insert id="addPermission" parameterType="Permission">
+        insert into tbl_system_permission(id,name,description,remark,create_person,create_time,is_use)
+        values(#{id},#{name},#{description},#{remark},#{create_person},#{create_time},#{is_use})
+    </insert>
+    <update id="deletePermission" parameterType="Permission">
+      update tbl_system_permission set is_use=1 where id=#{id};
+    </update>
+    <select id="getPermissionById" parameterType="String" resultMap="PermissionResult">
+        <include refid="commSql"/> and id=#{id}
+    </select>
+</mapper>

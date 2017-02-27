@@ -23,6 +23,13 @@ public interface UserRoleMapper {
     public List<UserRole> getUserRoleByUserId(String userId);
 
     /**
+     * 添加用户角色
+     * @param userRole
+     * @return
+     */
+    public boolean addUserRole(UserRole userRole);
+
+    /**
      * 通过用户获取其角色列表
      * @param userId
      * @return

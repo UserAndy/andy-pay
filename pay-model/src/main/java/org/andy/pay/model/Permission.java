@@ -47,7 +47,7 @@ public class Permission implements java.io.Serializable{
     private Date update_time;
 
     /**
-     * 1 表示正在使用  0 表示逻辑已删除
+     * 0 表示正在使用  1 表示逻辑已删除
      */
     private int is_use;
 

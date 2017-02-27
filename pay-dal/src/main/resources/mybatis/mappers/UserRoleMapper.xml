@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="org.andy.pay.mapper.LoginLogsMapper">
-    <resultMap id="LogInfoResult" type="LoginLog">
+<mapper namespace="org.andy.pay.mapper.UserRoleMapper">
+    <resultMap id="UserRoleResult" type="UserRole">
         <id property="id" column="id" jdbcType="VARCHAR" />
         <result property="user_id" column="user_id" jdbcType="VARCHAR"/>
         <result property="role_id" column="role_id" jdbcType="VARCHAR"/>
@@ -11,14 +11,38 @@
         <result property="update_person" column="update_person" jdbcType="VARCHAR"/>
         <result property="is_use" column="is_use" jdbcType="INTEGER"/>
     </resultMap>
+    <!--设置resultMap-->
+    <resultMap id="URoleResult" type="Role">
+        <id property="id" column="id" jdbcType="VARCHAR" />
+        <result property="name" column="name" jdbcType="VARCHAR"/>
+        <result property="code" column="code" jdbcType="VARCHAR"/>
+        <result property="description" column="description" jdbcType="VARCHAR"/>
+        <result property="create_time" column="create_time" jdbcType="TIMESTAMP"/>
+        <result property="create_user" column="create_user" jdbcType="VARCHAR"/>
+        <result property="update_time" column="update_time" jdbcType="TIMESTAMP"/>
+        <result property="update_user" column="update_user" jdbcType="VARCHAR"/>
+        <result property="is_use" column="is_use" jdbcType="INTEGER"/>
+    </resultMap>
     <sql id="connSql">
         select id,user_id,role_id,create_time,create_person,update_time,update_person,is_use
         from tbl_system_user_role
     </sql>
-    <select id="getUserRoleByUserId" parameterType="String" resultMap="">
+    <sql id="roleSql">
+        select r.id,r.name,r.code,r.description,r.create_time,r.create_user,r.update_time,r.update_user,r.is_use
+        from tbl_system_role as r, tbl_system_user_role as ur
+        where r.id = ur.role_id
+    </sql>
+    <select id="getUserRoleByUserId" parameterType="String" resultMap="UserRoleResult">
        <include refid="connSql"/> where user_id=#{userId}
     </select>
-    <select id="getUserRoleById" parameterType="String" resultMap="">
+    <select id="getUserRoleById" parameterType="String" resultMap="getRoleByUserId">
         <include refid="connSql"/> where id=#{id}
     </select>
+    <select id="getRoleByUserId" resultMap="URoleResult" parameterType="String">
+        <include refid="roleSql"/> and ur.is_use=0 and r.is_use=0 and ur.user_id=#{user_id}
+    </select>
+    <insert id="addUserRole" parameterType="UserRole">
+      insert into tbl_system_user_role(id,user_id,role_id,create_time,create_person,is_use)
+      values(#{id},#{user_id},#{role_id},#{create_time},#{create_person},#{is_use});
+    </insert>
 </mapper>

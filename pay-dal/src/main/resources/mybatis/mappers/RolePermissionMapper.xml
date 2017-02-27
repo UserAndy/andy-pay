@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.andy.pay.mapper.RolePermissionMapper">
+    <resultMap id="RolePermissionResult" type="RolePermission">
+        <id property="id" column="id" jdbcType="VARCHAR" />
+        <result property="role_id" column="role_id" jdbcType="VARCHAR"/>
+        <result property="permission_id" column="permission_id" jdbcType="VARCHAR"/>
+        <result property="create_time" column="create_time" jdbcType="TIMESTAMP"/>
+        <result property="create_person" column="create_person" jdbcType="VARCHAR"/>
+        <result property="update_time" column="update_time" jdbcType="TIMESTAMP"/>
+        <result property="update_person" column="update_person" jdbcType="VARCHAR"/>
+        <result property="is_use" column="is_use" jdbcType="INTEGER"/>
+    </resultMap>
+    <resultMap id="RPermissionResult" type="Permission">
+        <id property="id" column="id" jdbcType="VARCHAR" />
+        <result property="name" column="name" jdbcType="VARCHAR"/>
+        <result property="description" column="description" jdbcType="VARCHAR"/>
+        <result property="remark" column="remark" jdbcType="VARCHAR"/>
+        <result property="create_time" column="create_time" jdbcType="TIMESTAMP"/>
+        <result property="create_person" column="create_person" jdbcType="VARCHAR"/>
+        <result property="update_time" column="update_time" jdbcType="TIMESTAMP"/>
+        <result property="update_person" column="update_person" jdbcType="VARCHAR"/>
+        <result property="is_use" column="is_use" jdbcType="INTEGER"/>
+    </resultMap>
+    <sql id="commSql">
+        select id,role_id,permission_id,create_time,create_person,update_time,update_person,is_use from tbl_system_role_permission
+    </sql>
+    <sql id="connSql">
+        select p.id,p.name,p.description,p.remark,p.create_person,p.create_time,p.update_time,p.update_person,p.is_use
+        from tbl_system_permission as p,tbl_system_role_permission as rp
+        where p.id = rp.permission_id
+    </sql>
+    <insert id="addRolePermission" parameterType="RolePermission">
+        insert into tbl_system_role_permission(id,role_id,permission_id,create_time,
+        create_person,is_use)
+        values(#{id},#{role_id},#{permission_id},#{create_time},#{create_person},#{is_use});
+    </insert>
+    <select id="getRolePermissionById" parameterType="String" resultMap="RolePermissionResult">
+        <include refid="commSql"/> where is_use=0 and id=#{id}
+    </select>
+    <select id="getPermissionByRoldId" parameterType="String" resultMap="RPermissionResult">
+        <include refid="connSql"/>and p.is_use=0 and rp.is_use=0 and rp.role_id=#{roleId}
+    </select>
+    <delete id="deleteRolePermission" parameterType="String">
+      update tbl_system_role_permission set is_use=1 where id=#{id};
+    </delete>
+</mapper>
