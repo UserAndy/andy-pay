@@ -36,7 +36,7 @@
                         <li><a class="J_menuItem" href="mailbox.html">信箱</a>
                         </li>
                         <li class="divider"></li>
-                        <li><a href="login.html">安全退出</a>
+                        <li><a href="<%=basePath%>user/logout">安全退出</a>
                         </li>
                     </ul>
                 </div>
@@ -347,6 +347,7 @@
             <li>
                 <a href="#"><i class="fa fa-cutlery"></i> <span class="nav-label">系统设置</span><span class="fa arrow"></span></a>
                 <ul class="nav nav-second-level">
+                    <li><a class="J_menuItem" href="<%=basePath%>/user/resetPassword">修改密码</a></li>
                     <li><a class="J_menuItem" href="<%=basePath%>/system/logs">登录日志</a></li>
                 </ul>
             </li>

@@ -47,18 +47,18 @@
                     <li><i class="fa fa-arrow-circle-o-right m-r-xs"></i> 优势四</li>
                     <li><i class="fa fa-arrow-circle-o-right m-r-xs"></i> 优势五</li>
                 </ul>
-                <strong>还没有账号？ <a href="<%=basePath%>/register">立即注册&raquo;</a></strong>
+                <strong>还没有账号？ <a href="<%=basePath%>register">立即注册&raquo;</a></strong>
             </div>
         </div>
         <div class="col-sm-5">
-            <form method="post" action="http://www.zi-han.net/theme/hplus/index.html">
+            <form method="POST" action="<%=basePath%>user/login" id="loginForm">
                 <h4 class="no-margins">登录：</h4>
                 <p class="m-t-md">登录到H+后台主题UI框架</p>
-                <input type="text" class="form-control uname" placeholder="用户名" />
-                <input type="password" class="form-control pword m-b" placeholder="密码" />
-                <a href="#">忘记密码了？</a>
-                <button class="btn btn-success btn-block">登录</button>
-                <a href="<%=basePath%>">直接登录</a>
+                <input type="text" class="form-control uname" placeholder="用户名" name="email" id="email"/>
+                <input type="password" class="form-control pword m-b" placeholder="密码" name="password" id="password"/>
+                <a href="#">忘记密码了？</a><a href="<%=basePath%>">直接登录</a>
+                <button class="btn btn-success btn-block" id="btnAjaxSubmit" type="button">登录</button>
+                <div style="color:red;margin-top: 10px" id="errormsg"></div>
             </form>
         </div>
     </div>
@@ -68,5 +68,18 @@
         </div>
     </div>
 </div>
+<!--跳转首页的链接-->
+<input type="hidden" value="<%=basePath%>/" id="indexPath"/>
+<!--script -->
+<script type="text/javascript" src="<%=basePath%>resources/common/js/jquery.min.js"></script>
+<script type="text/javascript" src="<%=basePath%>resources/common/js/plugins/form/jquery.form.js"></script>
+<!--md5 加密js-->
+<script src="<%=basePath%>resources/common/js/plugins/md5/md5.min.js"></script>
+<script type="text/javascript" src="<%=basePath%>resources/system/user/login.js"></script>
+    <script>
+        $(document).ready(function () {
+            login();
+        });
+    </script>
 </body>
 </html>

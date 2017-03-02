@@ -5,6 +5,8 @@ import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 
 import java.util.Date;
+import java.util.List;
+
 /**
  * @description:  用户操作类
  * @author: Andy
@@ -96,4 +98,12 @@ public interface UserMapper {
      * @return
      */
     public User login(String username);
+
+    /**
+     * 获取用户列表
+     * @param startlength  角标
+     * @param pageSize   页面大小
+     * @return
+     */
+    public List<User> getUserList(@Param("startlength") int startlength,@Param("pageSize") int pageSize);
 }

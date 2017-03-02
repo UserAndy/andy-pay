@@ -35,7 +35,7 @@
     <select id="getUserRoleByUserId" parameterType="String" resultMap="UserRoleResult">
        <include refid="connSql"/> where user_id=#{userId}
     </select>
-    <select id="getUserRoleById" parameterType="String" resultMap="getRoleByUserId">
+    <select id="getUserRoleById" parameterType="String" resultMap="UserRoleResult">
         <include refid="connSql"/> where id=#{id}
     </select>
     <select id="getRoleByUserId" resultMap="URoleResult" parameterType="String">

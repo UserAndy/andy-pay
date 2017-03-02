@@ -12,9 +12,14 @@ public class User implements java.io.Serializable{
     private String id;
 
     /**
-     * 姓名
+     * 用户名(唯一不可修改)
      */
-    private String username;
+    private String user_name;
+
+    /**
+     * 昵称
+     */
+    private String nick_name;
 
     /**
      * 登录名(唯一)
@@ -203,12 +208,20 @@ public class User implements java.io.Serializable{
         this.id = id;
     }
 
-    public String getUsername() {
-        return username;
+    public String getUser_name() {
+        return user_name;
     }
 
-    public void setUsername(String username) {
-        this.username = username;
+    public void setUser_name(String user_name) {
+        this.user_name = user_name;
+    }
+
+    public String getNick_name() {
+        return nick_name;
+    }
+
+    public void setNick_name(String nick_name) {
+        this.nick_name = nick_name;
     }
 
     public String getLogin_name() {

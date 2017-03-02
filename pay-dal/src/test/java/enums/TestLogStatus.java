@@ -13,9 +13,9 @@ public class TestLogStatus {
     /**
      * 获取日志状态
      */
-    @Test
+   /* @Test
     public void testGetLogStatus(){
         System.out.println(LoginType.API.getStatus());           //获取枚举的日志信息
         System.out.println(LoginType.API.getDescrption());           //获取枚举的日志信息
-    }
+    }*/
 }

@@ -35,5 +35,5 @@
             </li>
         </ul>
     </div>
-    <a href="<%=basePath%>/login" class="roll-nav roll-right J_tabExit"><i class="fa fa fa-sign-out"></i> 退出</a>
+    <a href="<%=basePath%>user/logout" class="roll-nav roll-right J_tabExit"><i class="fa fa fa-sign-out"></i> 退出</a>
 </div>

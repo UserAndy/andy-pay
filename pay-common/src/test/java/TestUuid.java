@@ -1,6 +1,8 @@
 import org.andy.pay.common.utils.UuidUtils;
 import org.junit.Test;
 
+import java.util.Random;
+
 /**
  * description: 测试uuid
  *
@@ -42,5 +44,21 @@ public class TestUuid {
         String result = new String(array);
         System.out.println(result);
 
+    }
+
+    /**
+     * 测试用户名
+     */
+    @Test
+    public void testUserName(){
+        StringBuilder stringBuilder = new StringBuilder("u_");
+        String result="1234567890qwertyuiopasdfghjklzxcvbnm";
+        char[] arrays = result.toCharArray();
+        for(int i =0;i<15;i++) {
+            Random random = new Random();
+            int index = random.nextInt(result.length());
+            stringBuilder.append(arrays[index]);
+        }
+        System.out.println(stringBuilder.toString());
     }
 }

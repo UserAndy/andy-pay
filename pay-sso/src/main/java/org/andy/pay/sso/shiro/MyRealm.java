@@ -1,7 +1,7 @@
 package org.andy.pay.sso.shiro;
 
 import org.andy.pay.model.User;
-import org.andy.pay.service.impl.UserInfoServiceImpl;
+import org.andy.pay.service.impl.UserServiceImpl;
 import org.apache.log4j.Logger;
 import org.apache.shiro.authc.*;
 import org.apache.shiro.authz.AuthorizationInfo;
@@ -9,6 +9,8 @@ import org.apache.shiro.realm.AuthorizingRealm;
 import org.apache.shiro.subject.PrincipalCollection;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+
+import javax.servlet.http.HttpServletRequest;
 
 /**
  * 在这里处理
@@ -22,10 +24,8 @@ public class MyRealm extends AuthorizingRealm {
 
     private Logger logger = Logger.getLogger(MyRealm.class);
     @Autowired
-    private UserInfoServiceImpl userInfoService;
-/*
-    @Autowired
-    private HttpServletRequest request;*/
+    private UserServiceImpl userService;
+
 
     /**
      * 在判断用户权限的时候会调用
@@ -49,11 +49,11 @@ public class MyRealm extends AuthorizingRealm {
         System.out.println("doGetAuthenticationInfo----->");
         String username = (String)authenticationToken.getPrincipal();  //用户名
         String password = new String((char[])authenticationToken.getCredentials());//密码
-        User user = userInfoService.findByUsername(username);
+        User user = userService.getUserByEmail(username);
         if(user == null) {
             throw new UnknownAccountException();//没找到帐号
         }
-        if(Boolean.TRUE.equals(user.is_locked())) {
+        if(1==user.getIs_freeze()) {                    //此处硬编码
             throw new LockedAccountException(); //帐号锁定
         }
         if(!user.getPassword().equals(password)){    //密码不正确 (密码为加密后存储的)
@@ -61,11 +61,10 @@ public class MyRealm extends AuthorizingRealm {
         }
         //
         SimpleAuthenticationInfo authenticationInfo = new SimpleAuthenticationInfo(
-                user.getUsername(), //用户名
+                user.getEmail(), //用户名
                 user.getPassword(), //密码 //salt=username+salt
                 getName()); //realm name
         //
-        userInfoService.login(user);
         return authenticationInfo;
     }
 }

@@ -27,7 +27,7 @@
         select id,operationName,moudle,user_id,start_time,end_time,consume_time,create_time,method,description,ip,host,requestPath,referer,connection,
         fail_description,user_agent,view_time,action_time,is_use  from tbl_operation_logs
     </sql>
-    <insert id="addOperationLog" parameterType="addOperationLog">
+    <insert id="addOperationLog" parameterType="OperationLogs">
         insert into tbl_operation_logs(id,operationName,moudle,user_id,start_time,end_time,
         consume_time,create_time,method,description,ip,host,requestPath,referer,connection,
         fail_description,user_agent,view_time,action_time,is_use)

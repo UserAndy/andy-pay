@@ -8,10 +8,11 @@ import java.util.regex.Pattern;
  * 校验工具类
  */
 public class ValidateUtils {
-    /**
+
+	/**
      * 校验是否合法电子邮箱
      * @param email
-     * @return
+     * @return  true 为合法邮箱    false 为非合法邮箱
      */
 	public static boolean isEmail(String email) {
 		String check = "^([a-z0-9A-Z]+[-|\\.]?)+[a-z0-9A-Z]@([a-z0-9A-Z]+(-[a-z0-9A-Z]+)?\\.)+[a-zA-Z]{2,}$";
@@ -33,5 +34,7 @@ public class ValidateUtils {
         Matcher matcher = regex.matcher(userName);
         return matcher.matches();
     }
+
+
     
 }

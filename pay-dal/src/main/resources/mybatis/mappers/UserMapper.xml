@@ -4,10 +4,12 @@
     <resultMap id="UserResult" type="User">
         <id property="id" column="id" jdbcType="VARCHAR" />
         <id property="login_name" column="login_name" jdbcType="VARCHAR" />
-        <id property="username" column="username" jdbcType="VARCHAR" />
+        <id property="user_name" column="user_name" jdbcType="VARCHAR" />
+        <id property="real_name" column="real_name" jdbcType="VARCHAR" />
+        <id property="nick_name" column="nick_name" jdbcType="VARCHAR" />
         <id property="marita_status" column="marita_status" jdbcType="INTEGER" />
         <id property="education_situation" column="education_situation" jdbcType="INTEGER" />
-        <id property="password" column="password" jdbcType="password" />
+        <id property="password" column="password" jdbcType="VARCHAR" />
         <id property="salt" column="salt" jdbcType="VARCHAR" />
         <id property="email" column="email" jdbcType="VARCHAR" />
         <id property="telephone" column="telephone" jdbcType="VARCHAR" />
@@ -32,15 +34,15 @@
         <id property="is_freeze" column="is_freeze" jdbcType="INTEGER" />
     </resultMap>
     <sql id="connSql">
-      select id,username,login_name,real_name,marita_status,education_situation,password,salt,email,telephone,mobile,
+      select id,user_name,nick_name,login_name,real_name,marita_status,education_situation,password,salt,email,telephone,mobile,
      zipcode,sex,sum_balance,sum_integrate,current_balance,current_integrate,id_type,id_number,grade,remark,
     description,headurl,brithday,source,province,city,district,address from tbl_user
     </sql>
     <!--添加用户的基本信息-->
     <insert id="addBasicUser" parameterType="User">
-      insert into tbl_user(id,username,login_name,real_name,password,salt,email,telephone,sex,register_ip,register_time,
+      insert into tbl_user(id,user_name,nick_name,login_name,password,salt,email,sex,register_ip,register_time,
         register_person,is_freeze,is_use)values(
-        #{id},#{username},#{login_name},#{real_name},#{password},#{salt},#{email},#{telephone},#{sex},#{register_ip},#{register_time},#{register_person},#{is_freeze},#{is_use})
+        #{id},#{user_name},#{nick_name},#{login_name},#{password},#{salt},#{email},#{sex},#{register_ip},#{register_time},#{register_person},#{is_freeze},#{is_use})
     </insert>
     <update id="deleteUser">
       update tbl_user set is_use=1,handler_time=#{handler_time},handler_person=#{handler_user} where id=#{userId};
@@ -72,5 +74,8 @@
     </update>
     <select id="login" parameterType="String">
         <include refid="connSql"/> where email=#{username} or telephone=#{username}
+    </select>
+    <select id="getUserList" parameterType="int" resultMap="UserResult">
+        <include refid="connSql"/> where
     </select>
 </mapper>

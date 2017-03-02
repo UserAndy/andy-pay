@@ -69,19 +69,19 @@
                                 <thead>
                                 <tr>
                                     <th>用户名</th>
-                                    <th>联系电话</th>
+                                    <th>登录名</th>
+                                    <th>昵称</th>
                                     <th>email</th>
                                     <th>省</th>
                                     <th>市</th>
                                     <th>区</th>
-                                    <th>详细地址</th>
-                                    <th>生日</th>
+                                    <th>注册时间</th>
                                     <th>状态</th>
                                     <th>操作</th>
                                 </tr>
                                 </thead>
                                 <tbody>
-                                <!--item start-->
+                          <%--      <!--item start-->
                                 <tr class="gradeX">
                                     <td>张三</td>
                                     <td>15608464487</td>
@@ -165,7 +165,7 @@
                                         </a>
                                     </td>
                                 </tr>
-                                <!--item end-->
+                                <!--item end-->--%>
                                 </tbody>
                             </table>
                         </div>
@@ -190,11 +190,32 @@
     $(document).ready(function () {
         /* Init DataTables */
         var oTable = $('#editable').dataTable({
-            ordering:false,    //是否显示全局排序字段  false 表示不排序, true表示排序
-            searching : false,
-            sDom : '"top"i',
-            bFilter: false,    //去掉搜索框方法
-            bLengthChange: false,   //去掉每页显示多少条数据方法
+            "ordering":false,    //是否显示全局排序字段  false 表示不排序, true表示排序
+            "searching":false,
+            "sDom": '"top"i',
+            "bFilter": false,    //去掉搜索框方法
+            "bLengthChange": false,   //去掉每页显示多少条数据方法
+            "processing":true,        //进度条
+            "deferRender": true,
+            "serverSide": true,       //服务端分页
+            "iDisplayLength": 10,   //每页显示的数量
+            "fnRowCallback": function(nRow, aData, iDisplayIndex) {// 当创建了行，但还未绘制到屏幕上的时候调用，通常用于改变行的class风格
+                $('td:eq(5)',nRow).html("<a href='javascript:alert(&quot;删除&quot;)' class='btn btn-white btn-bitbucket'><i class='fa fa-edit'></i></a>");
+                if(aData.type==1){
+                    $('td:eq(4)',nRow).html("pc端");
+                }else{
+                    $('td:eq(4)',nRow).html("未知");
+                };
+                return nRow;
+            },
+            "aoColumns": [ //这个属性下的设置会应用到所有列，按顺序没有是空
+                {"mData": 'login_time'}, //mData 表示发请求时候本列的列明，返回的数据中相同下标名字的数据会填充到这一列
+                {"mData": 'ip'},
+                {"mData": 'os'},
+                {"mData": 'remark'},
+                {"mData": 'type'},
+                {"sDefaultContent": ''},        //占位作用
+            ],
         });
     });
     /**

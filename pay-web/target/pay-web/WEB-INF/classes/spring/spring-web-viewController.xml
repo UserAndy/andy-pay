@@ -23,7 +23,6 @@
     <!--配置controller 这样不需要每次写一个controller 进行跳转 -->
     <!--user controller-->
     <mvc:view-controller path="/" view-name="/index"/>
-    <mvc:view-controller path="/login" view-name="/login"/>
     <mvc:view-controller path="/register" view-name="/register"/>
     <mvc:view-controller path="/user/list" view-name="/user/list"/>
     <mvc:view-controller path="/user/locklist" view-name="/user/locklist"/>

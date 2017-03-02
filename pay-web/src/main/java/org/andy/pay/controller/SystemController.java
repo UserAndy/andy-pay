@@ -8,7 +8,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 /**
  * @description: 登录 Controller
- * @author: Andy
+ * @author: Andy  (暂时未使用)
  * @date: 2017-02-22
  * @blog: www.andyqian.com
  */

@@ -67,203 +67,15 @@
                     <table class="table table-bordered table-hover" id="editable">
                         <thead>
                         <tr>
-                            <th>用户名</th>
-                            <th>联系电话</th>
-                            <th>email</th>
-                            <th>省</th>
-                            <th>市</th>
-                            <th>区</th>
-                            <th>详细地址</th>
-                            <th>生日</th>
-                            <th>状态</th>
+                            <th>登录时间</th>
+                            <th>登录ip</th>
+                            <th>登录系统</th>
+                            <th>备注</th>
+                            <th>来源</th>
+                            <th>操作</th>
                         </tr>
                         </thead>
                         <tbody>
-                        <!--item start-->
-                        <tr class="gradeX">
-                            <td>张三</td>
-                            <td>15608464487</td>
-                            <td>804139028@qq.com</td>
-                            <td>湖南</td>
-                            <td class="center">长沙</td>
-                            <td class="center">武冈</td>
-                            <td class="center">武冈人民医院</td>
-                            <td class="center">2017-02-11</td>
-                            <td class="center">
-                                已冻结
-                            </td>
-                        </tr>
-                        <!--item end-->
-                        <!--item start-->
-                        <tr class="gradeX">
-                            <td>张三</td>
-                            <td>15608464487</td>
-                            <td>804139028@qq.com</td>
-                            <td>湖南</td>
-                            <td class="center">长沙</td>
-                            <td class="center">武冈</td>
-                            <td class="center">武冈人民医院</td>
-                            <td class="center">2017-02-11</td>
-                            <td class="center">正常</td>
-                        </tr>
-                        <!--item end-->
-                        <!--item start-->
-                        <tr class="gradeX">
-                            <td>张三</td>
-                            <td>15608464487</td>
-                            <td>804139028@qq.com</td>
-                            <td>湖南</td>
-                            <td class="center">长沙</td>
-                            <td class="center">武冈</td>
-                            <td class="center">武冈人民医院111</td>
-                            <td class="center">2017-02-11</td>
-                            <td>
-                                正常
-                            </td>
-                        </tr>
-                        <tr class="gradeX">
-                            <td>张三</td>
-                            <td>15608464487</td>
-                            <td>804139028@qq.com</td>
-                            <td>湖南</td>
-                            <td class="center">长沙</td>
-                            <td class="center">武冈</td>
-                            <td class="center">武冈人民医院111</td>
-                            <td class="center">2017-02-11</td>
-                            <td>
-                                正常
-                            </td>
-                        </tr>
-                        <tr class="gradeX">
-                            <td>张三</td>
-                            <td>15608464487</td>
-                            <td>804139028@qq.com</td>
-                            <td>湖南</td>
-                            <td class="center">长沙</td>
-                            <td class="center">武冈</td>
-                            <td class="center">武冈人民医院111</td>
-                            <td class="center">2017-02-11</td>
-                            <td>
-                                正常
-                            </td>
-                        </tr>
-                        <tr class="gradeX">
-                            <td>张三</td>
-                            <td>15608464487</td>
-                            <td>804139028@qq.com</td>
-                            <td>湖南</td>
-                            <td class="center">长沙</td>
-                            <td class="center">武冈</td>
-                            <td class="center">武冈人民医院111</td>
-                            <td class="center">2017-02-11</td>
-                            <td>
-                                正常
-                            </td>
-                        </tr>
-                        <tr class="gradeX">
-                            <td>张三</td>
-                            <td>15608464487</td>
-                            <td>804139028@qq.com</td>
-                            <td>湖南</td>
-                            <td class="center">长沙</td>
-                            <td class="center">武冈</td>
-                            <td class="center">武冈人民医院111</td>
-                            <td class="center">2017-02-11</td>
-                            <td>
-                                正常
-                            </td>
-                        </tr>
-                        <tr class="gradeX">
-                            <td>张三</td>
-                            <td>15608464487</td>
-                            <td>804139028@qq.com</td>
-                            <td>湖南</td>
-                            <td class="center">长沙</td>
-                            <td class="center">武冈</td>
-                            <td class="center">武冈人民医院111</td>
-                            <td class="center">2017-02-11</td>
-                            <td>
-                                正常
-                            </td>
-                        </tr>
-                        <tr class="gradeX">
-                            <td>张三</td>
-                            <td>15608464487</td>
-                            <td>804139028@qq.com</td>
-                            <td>湖南</td>
-                            <td class="center">长沙</td>
-                            <td class="center">武冈</td>
-                            <td class="center">武冈人民医院111</td>
-                            <td class="center">2017-02-11</td>
-                            <td>
-                                正常
-                            </td>
-                        </tr>
-                        <tr class="gradeX">
-                            <td>张三</td>
-                            <td>15608464487</td>
-                            <td>804139028@qq.com</td>
-                            <td>湖南</td>
-                            <td class="center">长沙</td>
-                            <td class="center">武冈</td>
-                            <td class="center">武冈人民医院111</td>
-                            <td class="center">2017-02-11</td>
-                            <td>
-                                正常
-                            </td>
-                        </tr>
-                        <tr class="gradeX">
-                            <td>张三</td>
-                            <td>15608464487</td>
-                            <td>804139028@qq.com</td>
-                            <td>湖南</td>
-                            <td class="center">长沙</td>
-                            <td class="center">武冈</td>
-                            <td class="center">武冈人民医院111</td>
-                            <td class="center">2017-02-11</td>
-                            <td>
-                                正常
-                            </td>
-                        </tr>
-                        <tr class="gradeX">
-                            <td>张三</td>
-                            <td>15608464487</td>
-                            <td>804139028@qq.com</td>
-                            <td>湖南</td>
-                            <td class="center">长沙</td>
-                            <td class="center">武冈</td>
-                            <td class="center">武冈人民医院111</td>
-                            <td class="center">2017-02-11</td>
-                            <td>
-                                正常
-                            </td>
-                        </tr>
-                        <tr class="gradeX">
-                            <td>张三</td>
-                            <td>15608464487</td>
-                            <td>804139028@qq.com</td>
-                            <td>湖南</td>
-                            <td class="center">长沙</td>
-                            <td class="center">武冈</td>
-                            <td class="center">武冈人民医院111</td>
-                            <td class="center">2017-02-11</td>
-                            <td>
-                                正常
-                            </td>
-                        </tr>
-                        <tr class="gradeX">
-                            <td>张三</td>
-                            <td>15608464487</td>
-                            <td>804139028@qq.com</td>
-                            <td>湖南</td>
-                            <td class="center">长沙</td>
-                            <td class="center">武冈</td>
-                            <td class="center">武冈人民医院111</td>
-                            <td class="center">2017-02-11</td>
-                            <td>
-                                正常
-                            </td>
-                        </tr>
                         <!--item end-->
                         </tbody>
                     </table>
@@ -286,11 +98,40 @@
     $(document).ready(function () {
         /* Init DataTables */
         var oTable = $('#editable').dataTable({
-            ordering:false,    //是否显示全局排序字段  false 表示不排序, true表示排序
-            searching : false,
-            sDom : '"top"i',
-            bFilter: false,    //去掉搜索框方法
-            bLengthChange: false,   //去掉每页显示多少条数据方法
+            "ordering":false,    //是否显示全局排序字段  false 表示不排序, true表示排序
+            "searching": false,
+            "sDom": '"top"i',
+            "bFilter": false,    //去掉搜索框方法
+            "bLengthChange": false,   //去掉每页显示多少条数据方法
+            "processing":true,        //进度条
+            "deferRender": true,
+            "serverSide": true,       //服务端分页
+            "iDisplayLength": 10,   //每页显示的数量
+            "ajax": {
+                url:"log/list",
+                type:"POST"
+            },
+          /* "fnServerParams": function(aoData) {   //向服务端提交其他的参数
+               aoData.push({ "name": "more_data", "value": "my_value" });
+            },*/
+            //定制列属性
+            "fnRowCallback": function(nRow, aData, iDisplayIndex) {// 当创建了行，但还未绘制到屏幕上的时候调用，通常用于改变行的class风格
+                $('td:eq(5)',nRow).html("<a href='javascript:alert(&quot;删除&quot;)' class='btn btn-white btn-bitbucket'><i class='fa fa-edit'></i></a>");
+                if(aData.type==1){
+                    $('td:eq(4)',nRow).html("pc端");
+                }else{
+                    $('td:eq(4)',nRow).html("未知");
+                };
+                return nRow;
+            },
+            "aoColumns": [ //这个属性下的设置会应用到所有列，按顺序没有是空
+                {"mData": 'login_time'}, //mData 表示发请求时候本列的列明，返回的数据中相同下标名字的数据会填充到这一列
+                {"mData": 'ip'},
+                {"mData": 'os'},
+                {"mData": 'remark'},
+                {"mData": 'type'},
+                {"sDefaultContent": ''},        //占位作用
+            ],
         });
     });
 </script>

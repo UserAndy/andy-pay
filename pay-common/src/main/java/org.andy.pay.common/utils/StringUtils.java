@@ -15,4 +15,12 @@ public class StringUtils {
         return (content == null||"".equals(content))?true:false;
     }
 
+    /**
+     * 判断是不是不为空
+     * @param content 待验证的内容
+     * @return
+     */
+    public static boolean isNotEmpty(String content){
+        return !isEmpty(content);
+    }
 }

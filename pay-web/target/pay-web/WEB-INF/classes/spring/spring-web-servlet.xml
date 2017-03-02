@@ -20,6 +20,7 @@
 
     <!--resources mapper 配置静态资源访问-->
     <mvc:resources mapping="/resources/common/**" location="/resources/common/"/>
+    <mvc:resources mapping="/resources/system/**" location="/resources/system/"/>
 
     <!--使用fastjson 作为json解析 注意应该写在mvc:annotation-driven标签里-->
     <mvc:annotation-driven>

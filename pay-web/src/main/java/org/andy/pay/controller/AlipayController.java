@@ -13,7 +13,7 @@ import java.util.Map;
 
 /**
  * description: 支付宝controller类的基本情况
- * @version 1.0
+ * @version 1.0  (暂时未使用)
  * @author Andy
  * @date 2017-01-04
  */
